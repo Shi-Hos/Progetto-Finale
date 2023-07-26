@@ -6,6 +6,7 @@
           <img src="{{Storage::url($article->img)}}" class="card-img-top" alt="immagine articolo">
           <div class="card-body">
             <h3 class="card-title">{{$article->title}}</h3>
+            <h4 class="card-title">{{$article->subtitle}}</h4>
             <h5 class="card-text">{{$article->body}}</h5>
           <div><a href="" class="small text-muted fst-italic text-capitalize">{{$article->category->name}}</a>
           </div>
