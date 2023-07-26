@@ -10,7 +10,7 @@
           <div><a href="" class="small text-muted fst-italic text-capitalize">{{$article->category->name}}</a>
           </div>
           <div class="mt-1 card-footer text-muted d-flex justify-content-between align-items-center">
-            Redatto il {{$article->created_at->format('d/m/Y')}} da <a href="" class="text-decoration-none">{{$article->author}}</a>
+            Redatto il {{$article->created_at->format('d/m/Y H:i:s')}} da <a href="" class="text-decoration-none">{{$article->author}}</a>
           </div>
           <div class="mt-1"><a href="{{route('article.show' , compact('article'))}}" class="btn btn-primary">DETTAGLIO</a></div>
           </div>
