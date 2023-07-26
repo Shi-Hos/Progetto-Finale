@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid mt-5">
   <div class="row">
       <div class="col-12 col-md-4">
         <div class="card" style="width: 18rem;">
@@ -7,9 +7,12 @@
           <div class="card-body">
             <h3 class="card-title">{{$article->title}}</h3>
             <h5 class="card-text">{{$article->body}}</h5>
-            <p class="card-title">{{$article->author}}</p>
-          <a href="{{route('article.show' , compact('article'))}}" class="btn btn-primary">DETTAGLIO</a>
-          <a href="{{route('welcome')}}" class="btn btn-primary m-1">TORNA INDIETRO</a>
+          <div><a href="" class="small text-muted fst-italic text-capitalize">{{$article->category->name}}</a>
+          </div>
+          <div class="mt-1 card-footer text-muted d-flex justify-content-between align-items-center">
+            Redatto il {{$article->created_at->format('d/m/Y')}} da <a href="" class="text-decoration-none">{{$article->author}}</a>
+          </div>
+          <div class="mt-1"><a href="{{route('article.show' , compact('article'))}}" class="btn btn-primary">DETTAGLIO</a></div>
           </div>
         </div>
       </div>

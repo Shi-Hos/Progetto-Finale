@@ -34,8 +34,10 @@ class ArticleController extends Controller
         Article::create(
             [
                 'author' => Auth::user()->name,
+                'user_id' => Auth::user()->id,
                 'title' => $request->input('title'),
                 'body' => $request->input('body'),
+                'category_id' => $request->category,
                 'img' => $request->has('img') ? $request->file('img')->store('public/cover') : '/img/background.jpg'
             ]
         );
@@ -55,7 +57,7 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
-        //
+        return view('article.edit', compact('article'));
     }
 
     /**
@@ -63,7 +65,21 @@ class ArticleController extends Controller
      */
     public function update(Request $request, Article $article)
     {
-        //
+        $request->validate([
+            'title' =>'required',
+            'body' =>'required',
+            'category' =>'required'
+        ]);
+        $article->update(
+            [
+                'author'=> Auth::user()->name,
+                'title' => $request->input('title'),
+                'body' => $request->input('body'),
+                'category' => $request->input('category'),
+                
+            ]
+        );
+        return redirect()->route('welcome')->with('message', 'Articolo modificato con successo');
     }
 
     /**
