@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class PublicController extends Controller
@@ -16,5 +17,9 @@ class PublicController extends Controller
     {
         $articles = Article::all()->sortDesc();
         return view('article.index', compact('articles'));
+    }
+
+    public function categoryShow(Category $category){
+        return view('article.category', compact('category'));
     }
 }

@@ -7,5 +7,7 @@
             </div>
         </div>
     </div>
+
+    
     <x-article-form></x-article-form>
 </x-layout>

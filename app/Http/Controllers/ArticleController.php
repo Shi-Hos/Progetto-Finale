@@ -13,11 +13,10 @@ class ArticleController extends Controller
     /**
      * Display a listing of the resource.
      */
-    // public function index()
-    // {
-    //     $article = Article::all();
-    //     return view('article.index', compact('article'));
-    // }
+    public function index()
+    {
+        //
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -40,6 +39,7 @@ class ArticleController extends Controller
                 'subtitle'=>$request->input('subtitle'),
                 'body' => $request->input('body'),
                 'category_id' => $request->category,
+                'category_name' => $request->category,
                 'img' => $request->has('img') ? $request->file('img')->store('public/cover') : '/img/background.jpg'
             ]
         );
