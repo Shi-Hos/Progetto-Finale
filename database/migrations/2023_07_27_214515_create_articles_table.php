@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('author');
             $table->string('title');
-            $table->text('body');
+            $table->string('subtitle');
+            $table->longText('body');
             $table->string('img');
             $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('SET NULL');

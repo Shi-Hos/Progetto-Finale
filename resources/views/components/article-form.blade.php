@@ -11,6 +11,13 @@
                     @enderror
                 </div>
                 <div class="mb-3">
+                    <label class="mt-3">SOTTOTITOLO</label>
+                    <input name="subtitle" value="{{old('subtitle')}}" type="text" class="form-control @error('subtitle') is-invalid @enderror">
+                    @error('subtitle')
+                    <div class="alert alert-danger">{{$message}}</div>
+                    @enderror
+                  </div>
+                <div class="mb-3">
                     <label for="body" class="form-label">DESCRIZIONE</label>
                     <textarea name="body" id="body" cols="30" rows="10" class="form-control @error('body') is-invalid @enderror">{{old('body')}}</textarea>
                     @error('body')

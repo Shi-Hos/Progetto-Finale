@@ -15,7 +15,8 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        //
+        $article = Article::all();
+        return view('article.index', compact('article'));
     }
 
     /**
@@ -36,12 +37,13 @@ class ArticleController extends Controller
                 'author' => Auth::user()->name,
                 'user_id' => Auth::user()->id,
                 'title' => $request->input('title'),
+                'subtitle'=>$request->input('subtitle'),
                 'body' => $request->input('body'),
                 'category_id' => $request->category,
                 'img' => $request->has('img') ? $request->file('img')->store('public/cover') : '/img/background.jpg'
             ]
         );
-        return redirect()->route('welcome')->with('message', 'articolo inserito con successo');
+        return redirect()->route('article.index')->with('message', 'articolo inserito con successo');
     }
 
     /**
