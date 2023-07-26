@@ -7,13 +7,15 @@
         </div>
     </div>
     
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-          <x-card
-          :article ="$article"
-          />
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-evenly mt-5">
+          @foreach($articles as $article)
+          <div class="col-12 col-lg-4">
+            <x-card :article='$article'></x-card>
+          </div>
+          @endforeach
         </div>
-    </div>
+      </div>
     
 
 </x-layout>

@@ -13,11 +13,11 @@ class ArticleController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        $article = Article::all();
-        return view('article.index', compact('article'));
-    }
+    // public function index()
+    // {
+    //     $article = Article::all();
+    //     return view('article.index', compact('article'));
+    // }
 
     /**
      * Show the form for creating a new resource.
