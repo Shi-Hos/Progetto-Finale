@@ -6,11 +6,10 @@
             </div>
         </div>
     </div>
-    
     <div class="container mt-5">
         <div class="row mt-5 justify-content-around">
             @if ($category->articles->isNotEmpty())
-          @foreach($categories->articles as $article)
+          @foreach($category->articles as $article)
           <div class="col-12 col-lg-4">
             <x-card :article='$article'></x-card>
         </div>

@@ -22,4 +22,12 @@ class PublicController extends Controller
     public function categoryShow(Category $category){
         return view('article.category', compact('category'));
     }
+
+    public function __construct(){
+        $this->middleware('auth')->except('welcome');
+    }
+
+    public function careers(){
+        return view('careers');
+    }
 }

@@ -22,4 +22,5 @@ Route::get('article/index', [PublicController::class, 'index'])->name('article.i
 Route::get('/article/show/{article}', [ArticleController::class, 'show'])->name('article.show');
 Route::get('/article/edit/{article}', [ArticleController::class,'edit'])->name('article.edit');
 Route::put('/article/update/{article}', [ArticleController::class, 'update'])->name('article.update');
-Route::get('/article/category/', [PublicController::class, 'categoryShow'])->name('article.category');
+Route::get('/article/category/{category}', [PublicController::class, 'categoryShow'])->name('article.category');
+Route::get('/careers', [PublicController::class, 'careers'])->name('careers');
