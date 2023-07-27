@@ -3,7 +3,7 @@
         <div class="col-12 col-md-4">
           <div class="card" style="width: 18rem;">
             {{-- QUESTA L'HO INSERITA DI DEFAULT SENNO' DAVA ERRORE, SENZA L'IMMAGINE NON MI PASSAVA L'ARTICOLO, POI LO IMPLEMENTEREMO --}}
-            <img src="{{Storage::url($article->img)}}" class="card-img-top" alt="immagine articolo">
+            <img src="https://picsum.photos/300" class="card-img-top" alt="immagine articolo">
             <div class="card-body">
               <h3 class="card-title">{{$article->title}}</h3>
               <h4 class="card-title">{{$article->subtitle}}</h4>
@@ -13,7 +13,7 @@
                 Redatto il {{$article->created_at->format('d/m/Y H:i:s')}} da <a href="" class="text-decoration-none">{{$article->author}}</a>
               </div>
             <a href="{{route('welcome')}}" class="btn m-1 bg-warning">TORNA INDIETRO</a>
-            <a href="{{route('article.edit', compact('article'))}}" class="btn btn-danger m-1">MODIFICA</a>
+            {{-- <a href="{{route('article.edit', compact('article'))}}" class="btn btn-danger m-1">MODIFICA</a> --}}
             </div>
           </div>
         </div>

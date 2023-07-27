@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-12">
-                <h1 class="display-2 text-center">ARTICOLI PER CATEGORIA : {{$category->name}}</h1>
+                <h1 class="display-4 text-center">ARTICOLI PER CATEGORIA : {{$category->name}}</h1>
             </div>
         </div>
     </div>
@@ -18,7 +18,7 @@
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-12">
-                    <h1 class="display-2 text-center">NON CI SONO ARTICOLI PER LA CATEGORIA : {{$category->name}}</h1>
+                    <h5 class="text-center">NON CI SONO ARTICOLI PER LA CATEGORIA : {{$category->name}}</h5>
                 </div>
             </div>
         </div>

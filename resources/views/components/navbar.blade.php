@@ -39,7 +39,6 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="{{route('article.create')}}">Crea Articolo</a></li>
-            <li><a class="dropdown-item" href="#">Another Action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="{{route('logout')}}" onclick="event.preventDefault();
             document.getElementById('logout-form').submit();">Logout</a></li>

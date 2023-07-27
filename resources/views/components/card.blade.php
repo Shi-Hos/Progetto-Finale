@@ -8,10 +8,11 @@
             <h4 class="card-title">{{$article->title}}</h4>
             <h5 class="card-title text-truncate">{{$article->subtitle}}</h5>
             <h5 class="card-text">{{$article->body}}</h5>
-          <div><a href="" class="small text-muted fst-italic text-capitalize">{{$article->category->name}}</a>
+          <div><a href="{{route('article.category' , ['category' => $article->category->id])}}" class="small text-muted fst-italic text-capitalize">{{$article->category->name}}</a>
           </div>
+          
           <div class="mt-1 card-footer text-muted d-flex justify-content-between align-items-center">
-            Redatto il {{$article->created_at->format('d/m/Y H:i:s')}} da <a href="" class="text-decoration-none">{{$article->author}}</a>
+            Redatto il {{$article->created_at->format('d/m/Y H:i:s')}} da <a href="{{route('article.user' , ['user' => $article->user->id])}}" class="text-decoration-none">{{$article->user->name}}</a>
           </div>
           <div class="mt-1"><a href="{{route('article.show' , compact('article'))}}" class="btn btn-primary">DETTAGLIO</a></div>
           </div>

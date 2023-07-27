@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\ArticleRequest;
+use App\Models\User;
 
 class ArticleController extends Controller
 {
@@ -33,7 +34,6 @@ class ArticleController extends Controller
     {
         Article::create(
             [
-                'author' => Auth::user()->name,
                 'user_id' => Auth::user()->id,
                 'title' => $request->input('title'),
                 'subtitle'=>$request->input('subtitle'),
@@ -95,5 +95,9 @@ class ArticleController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+    }
+
+    public function userShow(User $user){
+        return view('article.user', compact('user'));
     }
 }
