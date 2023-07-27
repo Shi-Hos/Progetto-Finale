@@ -10,7 +10,7 @@
               <h5 class="card-text">{{$article->body}}</h5>
               <a href="" class="small text-muted fst-italic text-capitalize">{{$article->category->name}}</a>
               <div class="mt-1 card-footer text-muted d-flex justify-content-between align-items-center">
-                Redatto il {{$article->created_at->format('d/m/Y')}} da <a href="" class="text-decoration-none">{{$article->author}}</a>
+                Redatto il {{$article->created_at->format('d/m/Y H:i:s')}} da <a href="" class="text-decoration-none">{{$article->author}}</a>
               </div>
             <a href="{{route('welcome')}}" class="btn m-1 bg-warning">TORNA INDIETRO</a>
             <a href="{{route('article.edit', compact('article'))}}" class="btn btn-danger m-1">MODIFICA</a>

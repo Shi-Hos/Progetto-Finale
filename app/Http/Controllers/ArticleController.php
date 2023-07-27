@@ -15,8 +15,7 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $article = Article::all();
-        return view('article.index', compact('article'));
+        //
     }
 
     /**
@@ -40,6 +39,7 @@ class ArticleController extends Controller
                 'subtitle'=>$request->input('subtitle'),
                 'body' => $request->input('body'),
                 'category_id' => $request->category,
+                'category_name' => $request->category,
                 'img' => $request->has('img') ? $request->file('img')->store('public/cover') : '/img/background.jpg'
             ]
         );
