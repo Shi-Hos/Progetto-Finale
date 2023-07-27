@@ -7,25 +7,21 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         
-
+        
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categorie
           </a>
-        <ul class="dropdown-menu">
-          @foreach($categories as $category)
-          <li><a class="dropdown-item" href="{{route('article.category' , compact('category'))}}">{{$category->name}}</a></li>
-          @endforeach
-        </ul>
-      </li>
+          <ul class="dropdown-menu">
+            @foreach($categories as $category)
+            <li><a class="dropdown-item" href="{{route('article.category' , compact('category'))}}">{{$category->name}}</a></li>
+            @endforeach
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('careers')}}">Lavora con noi</a>
+        </li>
         @guest
-
-
-
-
-
-
-
         <li class="nav-item">
           <a class="nav-link" href="{{route('register')}}">Login/Registrati</a>
         </li>
@@ -41,16 +37,17 @@
             <li><a class="dropdown-item" href="{{route('article.create')}}">Crea Articolo</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="{{route('logout')}}" onclick="event.preventDefault();
-            document.getElementById('logout-form').submit();">Logout</a></li>
-            <form action="{{route('logout')}}" id="logout-form" method="POST" class="d-none">
-              @csrf
-            </form>
-          </ul>
-        </li>
-      </ul>
-      @endguest
+              document.getElementById('logout-form').submit();">Logout</a></li>
+              <form action="{{route('logout')}}" id="logout-form" method="POST" class="d-none">
+                @csrf
+              </form>
+            </ul>
+          </li>
+        </ul>
+        @endguest
+      </div>
     </div>
-  </div>
-</nav>
-
-
+  </nav>
+  
+  
+  
