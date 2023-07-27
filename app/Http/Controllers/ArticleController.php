@@ -34,6 +34,7 @@ class ArticleController extends Controller
     {
         Article::create(
             [
+                'author' => Auth::user()->name,
                 'user_id' => Auth::user()->id,
                 'title' => $request->input('title'),
                 'subtitle'=>$request->input('subtitle'),
