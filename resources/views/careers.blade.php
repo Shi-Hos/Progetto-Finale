@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row justify-content-center">
             <div class="col-12">
                 <h1 class="display-2 text-center mt-5">LAVORA CON NOI</h1>
@@ -7,27 +7,27 @@
         </div>
     </div>
     
-    <div class="container-fluid">
-        <div class="row justify-content-start bg-primary">
-            <div class=" col-12 col-md-8 my-5">
-                <h2>Lavora come admin</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident earum alias iure doloribus. Maxime, quidem.</p>
+    <div class="container mt-5 my-5">
+        <div class="row justify-content-start">
+            <div class=" my-3 col-12 col-md-6 my-5">
+                <h2>Become Admin</h2>
+                <p class="ms-1">Il compito di un admin che gestisce un articolo è monitorare e moderare il contenuto, assicurandosi che sia conforme alle linee guida, rispondere ai commenti o interazioni degli utenti, e garantire la qualità e l'accuratezza del materiale pubblicato.</p>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row justify-content-end bg-danger">
-            <div class=" col-12 col-md-8 my-5 text-end bg-primary">
-                <h2>Lavora come admin</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident earum alias iure doloribus. Maxime, quidem.</p>
+    <div class="container my-5 mt-5">
+        <div class="row justify-content-end">
+            <div class=" my-3 col-12 col-md-6 my-5 text-end ">
+                <h2>Like a Revisor</h2>
+                <p class="ms-1">Il compito di un revisore che gestisce un articolo è quello di analizzare attentamente il contenuto per verificarne l'accuratezza, la coerenza e la qualità. Il revisore si assicura che l'articolo sia ben scritto, privo di errori grammaticali o di informazioni fuorvianti, e che sia in linea con le linee guida e gli standard dell'editore o della piattaforma.</p>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row justify-content-center bg-warning">
-            <div class="  col-12 col-md-8 my-5">
-                <h2>Lavora come admin</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident earum alias iure doloribus. Maxime, quidem.</p>
+    <div class="container my-5 mt-5">
+        <div class="row justify-content-center ">
+            <div class="my-3  col-12 col-md-6 my-5">
+                <h2>Im a Writer</h2>
+                <p class="ms-1">Un writer è un professionista della scrittura che si occupa di creare contenuti scritti per diverse finalità e piattaforme. Il loro compito principale è quello di esprimere concetti, idee o informazioni in modo chiaro, coinvolgente e ben strutturato. I writer possono lavorare su una vasta gamma di materiali, come articoli, blog, contenuti per siti web, pubblicità, copie promozionali, script, storie, e molto altro. Essi devono adattarsi al tono e al linguaggio richiesto dal progetto, mantenendo sempre una comunicazione efficace con il pubblico target. La ricerca, l'organizzazione delle informazioni e la creatività sono elementi fondamentali per il successo del lavoro di un writer.</p>
             </div>
         </div>
     </div>
@@ -67,8 +67,6 @@
                             </div>
                     </div>
                 </form>
-
-
             </div>
         </div>
     </div>

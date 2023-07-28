@@ -26,3 +26,5 @@ Route::get('/article/category/{category}', [PublicController::class, 'categorySh
 Route::get('/careers', [PublicController::class, 'careers'])->name('careers');
 Route::post('/careers/submit', [PublicController::class, 'careersSubmit'])->name('careers.submit');
 Route::get('/article/{user}/user' , [ArticleController::class, 'userShow'])->name('article.user');
+Route::get('/article/{user}/user/{article}', [ArticleController::class, 'userArticle'])->name('article.user.article');
+Route::get('chisiamo', [PublicController::class, 'chisiamo'])->name('chisiamo');

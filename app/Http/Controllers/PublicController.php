@@ -12,6 +12,9 @@ use PhpParser\Node\Expr\New_;
 
 class PublicController extends Controller
 {
+    public function chisiamo(){
+        return view('chisiamo');
+    }
 
     public function __construct(){
         $this->middleware('auth')->except('welcome');

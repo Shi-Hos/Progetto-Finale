@@ -3,7 +3,9 @@
   <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-12">
-            <h1 class="display-2 text-center">ULTIMI ARTICOLI</h1>
+          <fieldset>
+            <h1 class="display-3 borderY text-center">ULTIMI ARTICOLI</h1>
+          </fieldset>
         </div>
     </div>
 </div>

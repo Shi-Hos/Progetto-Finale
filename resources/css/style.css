@@ -292,7 +292,24 @@ h6 span{
     min-height: 310px !important; 
 }
 
-/* COLORE NAVBAR */
+
+
+/*NAVBAR */
 .navbar-custom{
-    background-color: rgb(255, 235, 167) !important;
+    background-color: #1f20297a;
+    border-bottom: #FFFF00 1px solid;
+}
+/* POSIZIONE BOTTONI NAVBAR */
+.posRight{
+  text-align:end !important;
+}
+/* TEXT COLOR NAVBAR */
+.ynav{
+  color:#FFFF00;
+}
+
+/* ULTIMI ARTICOLI TITLE */
+.borderY{
+  border: 2px solid #FFEBA7 ;
+  background-color: #2a2b38;
 }
