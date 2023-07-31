@@ -1,6 +1,7 @@
 <nav class="fixed-top navbar navbar-expand-lg  navbar-custom">
   <div class="container-fluid">
-    <a class="ynav navbar-brand" href="{{route('welcome')}}">HOME</a>
+    <img class="logo-custom"src="./image/logo,sito.png" alt="logo del sito">
+    <a class="ynav navbar-brand" href="{{route('welcome')}}"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

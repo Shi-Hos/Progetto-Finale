@@ -2,12 +2,22 @@
 .text-inst{
     color:rgb(237, 222, 164)
   }
+
+  
   .logo-custom-foot{
     height: 140px;
     width: 200px;
   }
+
+
   .custom-color-f{
     background-color: rgb(62, 76, 94) !important;
     color: rgb(237, 222, 164) !important;
+  }
+
+
+  .logo-custom{
+    height: 100px;
+    width: 150px;
   }
   /* footer fine */
