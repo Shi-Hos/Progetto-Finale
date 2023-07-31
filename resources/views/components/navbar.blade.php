@@ -32,6 +32,11 @@
         <li class="nav-item">
           <a class="ynav nav-link" href="{{route('article.index')}}">Tutti gli Articoli</a>
         </li>
+
+        @if (Auth::user()->is_admin)
+            <li><a class="dropdown-item" href="{{route('admin.dashboard')}}">Dashboard Admin</a></li>
+        @endif
+
           <li class="posRight d-flex nav-item dropdown">
             <a class="ynav nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Benvenuto {{Auth::user()->name}}

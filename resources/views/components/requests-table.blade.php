@@ -16,8 +16,22 @@
             <td>
                 <button class="btn btn-in text-white">Attiva {{$role}}</button>
             </td>
-        </tr>
-            
+        </tr>          
         @endforeach
     </tbody>
 </table>
+
+    <td>
+        @switch($role)
+            @case('amministratore')
+            <a href="{{route('admin.setAdmin', compact('user'))}}" class="btn btn-info text-white">Attiva {{$role}}</a>                
+                @break
+            @case('revisore')
+            <a href="{{route('admin.setRevisore', compact('user'))}}" class="btn btn-info text-white">Attiva {{$role}}</a>  
+                @break
+                @case('redattore')
+                <a href="{{route('admin.setRedattore', compact('user'))}}" class="btn btn-info text-white">Attiva {{$role}}</a>  
+                    @break
+        @endswitch
+    </td>
+
