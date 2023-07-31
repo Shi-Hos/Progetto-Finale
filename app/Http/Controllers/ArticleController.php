@@ -106,6 +106,7 @@ class ArticleController extends Controller
 
     public function byCategory(Category $category){
         $articles = $category->articles->sortbyDesc('created_at')->filter(function ($article) {
+            return $article->is_accepted == true;
         });
         return view('article.by-category', compact('articles', 'category'));
     }
