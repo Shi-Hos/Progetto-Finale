@@ -2,7 +2,7 @@
   <header>
     <x-searchbar/>
     <div class="page-header">
-        <div class="container-fluid">
+        <div class="container">
             
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -15,7 +15,7 @@
     </div>
     {{-- Seconda Card Con Titolo --}}
     <div class="card-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="card-block bg-white card-borderY mb30">
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -45,7 +45,7 @@
     <div class="row justify-content-center">
         <div class="col-12 mt-5">
           <fieldset>
-            <h1 class="display-3 borderY text-center">ULTIMI ARTICOLI</h1>
+            <h1 class="display-3 borderY text-center">I NOSTRI ULTIMI ARTICOLI</h1>
           </fieldset>
         </div>
     </div>
