@@ -1,4 +1,44 @@
 <x-layout>
+  <header>
+    <div class="page-header">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="page-caption">
+                        <h1 class="w-1 page-title">Fast News</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- Seconda Card Con Titolo --}}
+    <div class="card-section">
+        <div class="container">
+            <div class="card-block bg-white card-borderY mb30">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <!-- section-title -->
+                        <div class="section-title mb-0">
+                            <h2 class=" w-2 header-writers text-black">Il sapere di essere informati . Illuminiamo menti con sapienti ragioni, scopri il sapere, è la nostra missione!</h2>
+                            <p class="header-writers text-black mt-4">Articoli da tutto il mondo, portiamo il sapere anche dove non è concesso, la nostra forza siete voi </p>
+                                <h3 class="w-3 header-writers text-black display-6">Grazie</h3>
+                        </div>
+                        <!-- /.section-title -->
+                    </div>
+                </div>
+            </div>
+            {{-- Inseriremo il Created By --}}
+             </div>
+            </div> 
+  
+    
+       
+    </header> 
+
+
+
+
 
   <div class="container mt-5">
     <div class="row justify-content-center">
@@ -27,6 +67,9 @@
     </script>
   </div>
 </div> --}}
+
+
+
 
   </div>
 

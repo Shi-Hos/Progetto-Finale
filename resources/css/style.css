@@ -71,7 +71,7 @@ h6 span{
   color: #ffeba7;
   background-color: #102770;
   font-family: 'unicons';
-  content: '\eb4f';
+  content: '';
   z-index: 20;
   top: -10px;
   left: -10px;
@@ -287,16 +287,17 @@ h6 span{
 	display: block;
 }
 
-/* ALTEZZA CARD */
-.card-body{
-    min-height: 310px !important; 
-}
-
 
 
 /*NAVBAR */
 .navbar-custom{
     background-color: #1f20297a;
+    border-bottom: #FFFF00 1px solid;
+    height: 70px;
+}
+
+.dropdown-menu{
+  background-color: #1f20297a;
     border-bottom: #FFFF00 1px solid;
 }
 /* POSIZIONE BOTTONI NAVBAR */

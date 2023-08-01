@@ -1,8 +1,10 @@
 <x-layout>
-    <div class="container">
+    <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-12">
-                <h1 class="display-2 text-center mt-5">LAVORA CON NOI</h1>
+            <div class="col-12 mt-5">
+              <fieldset>
+                <h1 class="display-3 borderY text-center">LAVORA CON NOI</h1>
+              </fieldset>
             </div>
         </div>
     </div>
