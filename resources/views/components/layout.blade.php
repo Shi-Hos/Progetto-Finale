@@ -12,6 +12,8 @@
 <body>
     <x-navbar></x-navbar>
     
+      
+    
 
 
     @if ($errors->any())
