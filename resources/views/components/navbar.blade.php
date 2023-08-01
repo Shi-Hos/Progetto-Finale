@@ -33,9 +33,8 @@
         <li class="nav-item">
           <a class="ynav nav-link" href="{{route('article.index')}}">Tutti gli Articoli</a>
         </li>
-
         @if (Auth::user()->is_admin)
-            <li><a class="dropdown-item" href="{{route('admin.dashboard')}}">Dashboard Admin</a></li>
+            <li class="nav-item"><a class="ynav nav-link dropdown-item" href="{{route('admin.dashboard')}}">Dashboard Admin</a></li>
         @endif
         @if (Auth::user()->is_revisor)
             <li><a class="dropdown-item" href="{{route('revisor.dashboard')}}">Dashboard del revisore</a></li>
@@ -57,7 +56,10 @@
           </li>
         </ul>
         @endguest
-        
+        <form class="d-flex" method="GET" action="{{route('article.search')}}">
+          <input class="form-control me-2" type="search" name="query" placeholder="Cosa stai cercando?" aria-label="Search">
+          <button class="btn btn-outline-info" type="submit">Cerca</button>
+        </form>
       </div>
     </div>
   </nav>
