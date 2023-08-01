@@ -32,20 +32,18 @@ Route::get('/article/{user}/user' , [ArticleController::class, 'userShow'])->nam
 Route::get('/article/{user}/user/{article}', [ArticleController::class, 'userArticle'])->name('article.user.article');
 Route::get('chisiamo', [PublicController::class, 'chisiamo'])->name('chisiamo');
 
-Route::middleware('admin')->group(function () {
-    Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
-});
 
 Route::middleware('admin')->group(function(){
+    Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
     Route::get('/admin/{user}/set-admin', [AdminController::class, 'setAdmin'])->name('admin.setAdmin');
-    Route::get('/admin/{user}/set-revisor', [AdminController::class, 'setRevisor'])->name('revisor.setRevisor');
-    Route::get('/admin/{user}/set-writer', [AdminController::class, 'setWriter'])->name('writer.setWriter');
+    Route::get('/admin/{user}/set-revisor', [AdminController::class, 'setRevisor'])->name('admin.setRevisor');
+    Route::get('/admin/{user}/set-writer', [AdminController::class, 'setWriter'])->name('admin.setWriter');
 
 });
 
 Route::middleware('revisor')->group(function(){
     Route::get('/revisor/dashboard', [RevisorController::class,'dashboard'])->name('revisor.dashboard');
-    Route::get('/revisor/{article}/accept', [RevisorController::class, 'acceptArticle'])->name('acceptArticle');
+    Route::get('/revisor/{article}/accept', [RevisorController::class, 'acceptArticle'])->name('revisor.acceptArticle');
     Route::get('/revisor/{article}/reject', [RevisorController::class,'rejectArticle'])->name('revisor.rejectArticle');
     Route::get('/revisor/{article}/undo', [RevisorController::class, 'undoArticle'])->name('revisor.undoArticle');
 });

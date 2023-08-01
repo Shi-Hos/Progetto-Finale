@@ -3,7 +3,7 @@
   
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <img class="logo-custom-foot "src="./image/logo,sito.png" alt="logo del sito">
+    <img class="logo-custom-foot "src="/image/logo,sito.png" alt="logo del sito">
     <!-- Left -->
   
     <!-- Left -->

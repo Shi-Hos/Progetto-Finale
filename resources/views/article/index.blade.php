@@ -11,7 +11,7 @@
     
     <div class="container mt-5">
         <div class="row mt-5 justify-content-around">
-          @foreach($articles as $article)
+          @foreach($articles->where('is_accepted', true) as $article)
           <div class="col-12 col-lg-4">
             <x-card :article='$article'></x-card>
           </div>

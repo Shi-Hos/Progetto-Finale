@@ -1,7 +1,7 @@
 <nav class="fixed-top navbar navbar-expand-lg  navbar-custom">
   <div class="container-fluid">
 
-    <a class="ynav navbar-brand" href="{{route('welcome')}}">    <img class="logo-custom"src="./image/logo,sito.png" alt="logo del sito"></a>
+    <a class="ynav navbar-brand" href="{{route('welcome')}}">    <img class="logo-custom"src="/image/logo,sito.png" alt="logo del sito"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -37,7 +37,7 @@
         @if (Auth::user()->is_admin)
             <li><a class="dropdown-item" href="{{route('admin.dashboard')}}">Dashboard Admin</a></li>
         @endif
-        @if (Auth::user()->is_admin)
+        @if (Auth::user()->is_revisor)
             <li><a class="dropdown-item" href="{{route('revisor.dashboard')}}">Dashboard del revisore</a></li>
         @endif
 
