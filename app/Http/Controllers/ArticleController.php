@@ -33,7 +33,37 @@ class ArticleController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(ArticleRequest $request)
-    {
+    {   
+        $request->validate([
+            'title' => 'required|unique:articles|min:5',
+            'subtitle' => 'required|unique:articles|min:5',
+            'body' => 'required|min:10',
+            'image' => 'image|required',
+            'category' => 'required',
+            'tags' =>'required',
+
+        ]);
+
+        $article = Article::create([
+            'title' => $request->title,
+            'subtitle' => $request->subtitle,
+            'body' => $request->body,
+            'image' => $request->file('image')->store('public/images'),
+            'category_id' => $request->category_id,
+            'user_id' => $request->user_id,
+        ]);
+
+        $tags = explode(',', $request->tags);
+
+        foreach($tags as $tag){
+            $newTag = Tag::updateOrCreate([
+                'name' => $tag,
+            ]);
+            $article->tags()->attach($newTag->id);
+        }
+
+
+
         Article::create(
             [
                 'author' => Auth::user()->name,
@@ -46,7 +76,7 @@ class ArticleController extends Controller
                 'img' => $request->has('img') ? $request->file('img')->store('public/cover') : '/img/background.jpg'
             ]
         );
-        return redirect()->route('article.index')->with('message', 'articolo inserito con successo');
+        return redirect()->route('article.index')->with('message', 'Articolo inserito con successo');
     }
 
     /**
