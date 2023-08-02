@@ -2,6 +2,9 @@
 .text-inst{
     color:rgb(237, 222, 164)
   }
+.text-sf{
+   color: #FFFF00;
+}
 
   
   .logo-custom-foot{
@@ -15,10 +18,10 @@
     color: rgb(237, 222, 164) !important;
   }
 
-
+  
   .logo-custom{
-    height: 100px;
-    width: 150px;
+    height: 60px;
+    width: 100px;
   }
 
   .lunghezza{

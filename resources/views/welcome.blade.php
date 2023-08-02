@@ -2,17 +2,20 @@
   <header>
     <x-searchbar/>
     <div class="page-header">
-        <div class="container">
-            
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="page-caption">
-                        <h1 class="w-1 page-title">FAST NEWS</h1>
+        <div class="container-fluid">
+          
+            <div class="row justify-content-center">             
+                <div class="col-xl-8 col-lg-9 col-md-12 col-sm-12 col-12 vh-100 d-flex justify-content-center align-items-center p-0">
+                  <img class="logo-header" src="./image/logo,sito.png" alt="logo">
+                  <h2 class="ps-5 text">
+                    Restare aggiornati non è mai stato cosi' semplice
+                  </h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
     {{-- Seconda Card Con Titolo --}}
     <div class="card-section">
         <div class="container-fluid">

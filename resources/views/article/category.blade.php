@@ -13,7 +13,7 @@
     <div class="container mt-5">
         <div class="row mt-5 justify-content-around">
             @if ($category->articles->isNotEmpty())
-          @foreach($category->articles as $article)
+          @foreach($category->articles->where('is_accepted', true) as $article)
           <div class="col-12 col-lg-4">
             <x-card :article='$article'></x-card>
         </div>
