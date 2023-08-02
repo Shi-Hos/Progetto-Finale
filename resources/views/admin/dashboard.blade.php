@@ -4,7 +4,7 @@
         <div class="row justify-content-center">
             <div class="col-12 mt-5">
               <fieldset>
-                <h1 class="display-1 borderY text-center">BENVENUTO AMMINISTRATORE</h1>
+                <h1 class="display-3 borderY text-center">BENTORNATO ADMIN {{Auth::user()->name}}</h1>
               </fieldset>
             </div>
         </div>

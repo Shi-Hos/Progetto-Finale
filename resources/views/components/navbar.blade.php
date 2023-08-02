@@ -15,7 +15,7 @@
           </a>
           <ul class="dropdown-menu">
             @foreach($categories as $category)
-            <li><a class="dropdown-item"  href="{{route('article.category' , compact('category'))}}">{{$category->name}}</a></li>
+            <li><a class="dropdown-item ynav"  href="{{route('article.category' , compact('category'))}}">{{$category->name}}</a></li>
             @endforeach
           </ul>
         </li>
@@ -33,20 +33,23 @@
         <li class="nav-item">
           <a class="ynav nav-link" href="{{route('article.index')}}">Tutti gli Articoli</a>
         </li>
-        @if (Auth::user()->is_admin)
-            <li class="nav-item"><a class="ynav nav-link dropdown-item" href="{{route('admin.dashboard')}}">Dashboard Admin</a></li>
-        @endif
-        @if (Auth::user()->is_revisor)
-            <li><a class="dropdown-item" href="{{route('revisor.dashboard')}}">Dashboard del revisore</a></li>
-        @endif
+        
 
           <li class="posRight d-flex nav-item dropdown">
             <a class="ynav nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Benvenuto {{Auth::user()->name}}
             </a>
-          <ul class="dropdown-menu">
-            <li><a class=" ynav dropdown-item" href="{{route('article.create')}}">Crea Articolo</a></li>
-            <li><hr class="dropdown-divider"></li>
+          <ul class="dropdown-menu"> 
+            @if (Auth::user()->is_admin)
+            <li class="nav-item"><a class="ynav nav-link dropdown-item" href="{{route('admin.dashboard')}}">Dashboard Admin</a></li>
+        @endif
+        <li><hr class="dropdown-divider"></li>
+        @if (Auth::user()->is_revisor)
+            <li><a class="dropdown-item ynav" href="{{route('revisor.dashboard')}}">Dashboard del revisore</a></li>
+        @endif
+        <li><hr class="dropdown-divider"></li>
+        <li><a class=" ynav dropdown-item" href="{{route('article.create')}}">Crea Articolo</a></li>
+        <li><hr class="dropdown-divider"></li>
             <li><a class="ynav dropdown-item" href="{{route('logout')}}" onclick="event.preventDefault();
               document.getElementById('logout-form').submit();">Logout</a></li>
               <form action="{{route('logout')}}" id="logout-form" method="POST" class="d-none">
@@ -56,7 +59,7 @@
           </li>
         </ul>
         @endguest
-        <form class="d-flex " method="GET" action="{{route('article.search')}}">
+        <form class="d-flex spaziosearch" method="GET" action="{{route('article.search')}}">
           <input class=" form-control me-2" type="search" name="query" placeholder="Cosa stai cercando?" aria-label="Search">
           <button class="btn btn-outline-info" type="submit">Cerca</button>
         </form>

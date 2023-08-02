@@ -1,8 +1,12 @@
 <x-layout>
 
-    <div class="container-fluid p-5 bg-info text-center text-white">
+    <div class="container mt-5">
         <div class="row justify-content-center">
-            <h1 class="display-1">Bentornato, Revisore</h1>
+            <div class="col-12 mt-5">
+              <fieldset>
+                <h1 class="display-3 borderY text-center">BENTORNATO REVISORE {{Auth::user()->name}}</h1>
+              </fieldset>
+            </div>
         </div>
     </div>
 

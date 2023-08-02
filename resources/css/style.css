@@ -309,8 +309,17 @@ h6 span{
   color:#FFFF00;
 }
 
+.ynav:hover{
+  color: white;
+  background-color: #1f20297a;
+}
+
 /* ULTIMI ARTICOLI TITLE */
 .borderY{
   border: 2px solid #FFEBA7 ;
   background-color: #2a2b38;
+}
+
+.spaziosearch{
+  margin-left: 290px;
 }
