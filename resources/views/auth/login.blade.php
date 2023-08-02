@@ -73,7 +73,7 @@
                             <i class="input-icon uil uil-at"></i>
                           </div>	
                           <div class="form-group mt-2">
-                            <input type="password" name="password" class="form-style" placeholder="Ripeti Password" id="password" autocomplete="off">
+                            <input type="password" name="password" class="form-style" placeholder="Password" id="password" autocomplete="off">
                             <i class="input-icon uil uil-lock-alt"></i>
                           </div>
                           <div class="form-group mt-2">
