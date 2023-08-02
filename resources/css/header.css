@@ -7,7 +7,7 @@ p { margin: 0 0 20px; line-height: 1.7; }
 .w4 { font-size: 20px; }
 .w5 { font-size: 17px; }
 .w6 { font-size: 12px; }
- p {  line-height: 1.7; }
+ p { margin: 0 0 20px; line-height: 1.7; }
 p:last-child { margin: 0px; }
 a { text-decoration: none; color: #8d8f90; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
 a:focus, a:hover { text-decoration: none; color: #f85759; }

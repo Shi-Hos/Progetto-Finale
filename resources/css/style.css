@@ -292,13 +292,13 @@ h6 span{
 /*NAVBAR */
 .navbar-custom{
     background-color: rgb(62, 76, 94);
-    border-bottom: #FFEBA7 1px solid;
+    border-bottom: #FFFF00 1px solid;
     height: 70px;
 }
 
 .dropdown-menu{
   background-color: #1f20297a;
-    border-bottom: #FFEBA7 1px solid;
+    border-bottom:  1px solid;
 }
 /* POSIZIONE BOTTONI NAVBAR */
 .posRight{
