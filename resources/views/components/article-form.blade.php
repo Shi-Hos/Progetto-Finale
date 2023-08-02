@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-12 col-md-6">
-            <form method="POST" enctype="multipart/form-data" action="{{route('article.store')}}">
+            <form class="border p-5" method="POST" enctype="multipart/form-data" action="{{route('article.store')}}">
                 @csrf
                 <div class="mb-3">
                     <label for="title" class="form-label">TITOLO</label>
@@ -31,6 +31,11 @@
                         <option value="{{$category->id}}">{{$category->name}}</option>
                         @endforeach
                     </select>
+                </div>
+                <div class="mb-3">
+                    <label for="tags" class="form-label">Tags:</label>
+                    <input name="tags" id="tags" class="form-control" value="{{old('tags')}}">
+                    <span class="small fst-italic">Dividi ogni tag con una virgola</span>
                 </div>
                 <button type="submit" class="btn btn-primary">SUBMIT</button>
             </form>

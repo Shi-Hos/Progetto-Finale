@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Tag;
 use App\Models\User;
 use App\Models\Article;
 use App\Models\Category;
@@ -64,18 +65,18 @@ class ArticleController extends Controller
 
 
 
-        Article::create(
-            [
-                'author' => Auth::user()->name,
-                'user_id' => Auth::user()->id,
-                'title' => $request->input('title'),
-                'subtitle'=>$request->input('subtitle'),
-                'body' => $request->input('body'),
-                'category_id' => $request->category,
-                'category_name' => $request->category,
-                'img' => $request->has('img') ? $request->file('img')->store('public/cover') : '/img/background.jpg'
-            ]
-        );
+        // Article::create(
+        //     [
+        //         'author' => Auth::user()->name,
+        //         'user_id' => Auth::user()->id,
+        //         'title' => $request->input('title'),
+        //         'subtitle'=>$request->input('subtitle'),
+        //         'body' => $request->input('body'),
+        //         'category_id' => $request->category,
+        //         'category_name' => $request->category,
+        //         'img' => $request->has('img') ? $request->file('img')->store('public/cover') : '/img/background.jpg'
+        //     ]
+        // );
         return redirect()->route('article.index')->with('message', 'Articolo inserito con successo');
     }
 
