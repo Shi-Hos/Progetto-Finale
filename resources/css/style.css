@@ -291,14 +291,14 @@ h6 span{
 
 /*NAVBAR */
 .navbar-custom{
-    background-color: #1f20297a;
-    border-bottom: #FFFF00 1px solid;
+    background-color: rgb(62, 76, 94);
+    border-bottom: #FFEBA7 1px solid;
     height: 70px;
 }
 
 .dropdown-menu{
   background-color: #1f20297a;
-    border-bottom: #FFFF00 1px solid;
+    border-bottom: #FFEBA7 1px solid;
 }
 /* POSIZIONE BOTTONI NAVBAR */
 .posRight{
@@ -306,7 +306,7 @@ h6 span{
 }
 /* TEXT COLOR NAVBAR */
 .ynav{
-  color:#FFFF00;
+  color:#FFEBA7;
 }
 
 .ynav:hover{

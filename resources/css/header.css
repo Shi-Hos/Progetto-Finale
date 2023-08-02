@@ -7,7 +7,7 @@ p { margin: 0 0 20px; line-height: 1.7; }
 .w4 { font-size: 20px; }
 .w5 { font-size: 17px; }
 .w6 { font-size: 12px; }
- p { margin: 0 0 20px; line-height: 1.7; }
+ p {  line-height: 1.7; }
 p:last-child { margin: 0px; }
 a { text-decoration: none; color: #8d8f90; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
 a:focus, a:hover { text-decoration: none; color: #f85759; }
@@ -21,10 +21,12 @@ a:focus, a:hover { text-decoration: none; color: #FFEBA7; } */
     border: 2px solid #FFEBA7 ;
 }
 
+.logo-header{
+   width: 50vw;
+}
 
 
-
-.page-header { background: url(https://easetemplate.com/free-website-templates/hike/images/pageheader.jpg)no-repeat; position: relative; background-size: cover; }
+.page-header { background: url('../../public/image/sfondo.jpg') no-repeat; position: relative; filter:blur(0.5px); background-size: cover; background-position: center; }
 .page-caption { padding-top: 170px; padding-bottom: 174px; }
 .page-title { font-size: 46px; line-height: 1; color: #ffffff; font-weight: 600; text-align: center; }
 

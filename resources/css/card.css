@@ -61,7 +61,7 @@ p {
   height: 27.125rem;
   overflow: hidden;
   border-radius: 0.625rem;
-  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(227, 238, 6, 0.25);
   margin-top: 50px;
 }
 
@@ -166,6 +166,8 @@ p {
   .card:focus-within {
     transform: scale(1.05);
     transition: transform 500ms ease-in;
+    -webkit-box-shadow: 29px 35px 36px -10px rgba(255,255,255,0.8); 
+    box-shadow: 29px 35px 36px -10px rgba(255,255,255,0.8);
   }
 
   .card:hover .card__content,
