@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Article extends Model
 {
     use HasFactory, Searchable;
-    protected $fillable = ['author' , 'title', 'subtitle', 'body' , 'img', 'user_id', 'category_id', 'is_accepted'];
+    protected $fillable = ['title', 'subtitle', 'body' , 'img', 'user_id', 'category_id', 'is_accepted'];
 
     public function user(){
         return $this->belongsTo(User::class);

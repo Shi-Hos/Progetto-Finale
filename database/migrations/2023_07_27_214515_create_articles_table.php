@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
-            $table->string('author');
             $table->string('title');
             $table->string('subtitle');
             $table->longText('body');

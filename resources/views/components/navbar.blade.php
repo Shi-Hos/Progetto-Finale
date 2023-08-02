@@ -19,7 +19,7 @@
                     <ul class="dropdown-menu">
                         @foreach ($categories as $category)
                             <li><a class="dropdown-item"
-                                    href="{{ route('article.category', compact('category')) }}">{{ $category->name }}</a>
+                                href="{{ route('article.category', compact('category')) }}">{{ $category->name }}</a>
                             </li>
                         @endforeach
                     </ul>
@@ -60,7 +60,7 @@
                             </li>
                             <li><a class="ynav dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
-              document.getElementById('logout-form').submit();">Logout</a>
+                                    document.getElementById('logout-form').submit();">Logout</a>
                             </li>
                             <form action="{{ route('logout') }}" id="logout-form" method="POST" class="d-none">
                                 @csrf
@@ -70,5 +70,11 @@
                 </ul>
             @endguest
         </div>
+        <form action="{{route('article.search')}}" method="get" class="d-flex">
+            <input type="search" class="me-3 form-control" name="query" placeholder="Cosa Stai Cercando?" aria-label="Search">
+            <button class="btn btn-outline-info" type="submit">
+                Search
+            </button>
+        </form>
     </div>
 </nav>

@@ -54,27 +54,6 @@
     </div>
 </div>
 
-
-{{-- PER DAVIDE, DA CONTROLLARE --}}
-  {{-- <div class="container">
-<div class="row justify-content-center">
-  <div class="col-lg-4" id="animation-container">
-    <script>
-      let animation = bodymovin.loadAnimation({
-        container: document.getElementById('animation-container'),
-        path: 'animazionepanino.json',
-        renderer:'svg',
-        loop: true,
-        autoplay: true,
-        name: 'panino',
-      })
-    </script>
-  </div>
-</div> --}}
-
-
-
-
   </div>
 
     <div class="container mt-5">
