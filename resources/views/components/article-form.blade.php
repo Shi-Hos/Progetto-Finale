@@ -38,6 +38,12 @@
                         <option value="{{$category->id}}">{{$category->name}}</option>
                         @endforeach
                     </select>
+
+                    @if($article->category)
+            <a href="{{route('article.byCategory' , ['category' => $article->category->id])}}" class="small fst-italic text-capitalize">{{$article->category->name}}</a>
+            @else
+            <p class="small fst-italic text-capitalize">Non categorizzato</p>
+            @endif
                 </div>
                 <div class="mb-3">
                     <label for="tags" class="form-label">Tags:</label>
@@ -45,12 +51,5 @@
                     <span class="small fst-italic">Dividi ogni tag con una virgola</span>
                 </div>
                 <button type="submit" class="btn btn-primary">SUBMIT</button>
-            </form>
-        </div>
-    </div>
-</div>
 
-
-
-
-           
+                

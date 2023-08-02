@@ -21,6 +21,19 @@
                 <a href="{{ route('article.user', ['user' => $article->user->id]) }}"
                     class="w-50 text-decoration-none card-text text-truncate">{{ $article->user->name }}</a>
             </div>
+
+            <p class="small fst-italic text-capitalize">
+                @foreach ($article->tags as $tag)
+                    #{{$tag->name}}
+                @endforeach
+            </p>
+
+
+            @if($article->category)
+            <a href="{{route('article.byCategory' , ['category' => $article->category->id])}}" class="small fst-italic text-capitalize">{{$article->category->name}}</a>
+            @else
+            <p class="small fst-italic text-capitalize">Non categorizzato</p>
+            @endif
             <div class="mt-1 "><a href="{{ route('article.show', compact('article')) }}"
                     class="btn btn-primary">DETTAGLIO</a></div>
         </div>
