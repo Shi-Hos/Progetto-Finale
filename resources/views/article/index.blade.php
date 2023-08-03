@@ -19,10 +19,7 @@
           @endforeach
         </div>
       </div>
-<<<<<<< HEAD
 
     
 
-=======
->>>>>>> 63887f92a37830678a96f12a5fb2d253deaf2290
 </x-layout>
