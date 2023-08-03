@@ -230,6 +230,8 @@ h6 span{
     transition: all 200ms linear;
 }
 
+
+
 .btn{  
   border-radius: 4px;
   height: 44px;
@@ -309,8 +311,10 @@ h6 span{
   color:#FFEBA7;
 }
 
-.ynav:hover{
-  color: white;
+.ynav:hover, 
+.ynav:focus
+{
+  color: white !important;
   background-color: #1f20297a;
 }
 
