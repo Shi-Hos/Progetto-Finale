@@ -1,0 +1,10 @@
+.number{
+    font-size: 50px;
+    color: #FFEBA7;
+    font-weight: 900;
+}
+
+.special-font{
+    color: #FFEBA7;
+    font-family: 'Lumanosimo', cursive;
+}

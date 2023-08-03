@@ -3,22 +3,22 @@
 
         <a class="ynav navbar-brand" href="{{ route('welcome') }}"> <img class="logo-custom" src="/image/logo,sito.png"
                 alt="logo del sito"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button class="navbar-toggler text-inst" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa-solid fa-arrow-down fa-bounce fa-xs text-inst"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
 
                 <li class="nav-item dropdown">
-                    <a class="ynav nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="ynav nav-link dropdown-toggle text-inst" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Categorie
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu text-inst">
                         @foreach ($categories as $category)
-                            <li><a class="dropdown-item"
+                            <li><a class="dropdown-item text-inst"
                                     href="{{ route('article.category', compact('category')) }}">{{ $category->name }}</a>
                             </li>
                         @endforeach
@@ -31,8 +31,8 @@
                     <a class="ynav nav-link" href="{{ route('careers') }}">Lavora con noi</a>
                 </li>
                 @guest
-                    <li class="nav-item">
-                        <a class="ynav nav-link" href="{{ route('register') }}">Login/Registrati</a>
+                    <li class="nav-item">                        
+                        <a class="ynav nav-link fa-solid fa-user-plus fa-2x" href="{{ route('register') }}"></a>                     
                     </li>
                 @else
                     <li class="nav-item">
