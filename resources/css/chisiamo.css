@@ -1,0 +1,72 @@
+.userCard{
+	color:#50C5B7;
+    width: 350px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #50C5B7 #50C5B7);
+    box-shadow:  20px 20px 60px #50C5B7, 
+             -20px -20px 60px #50C5B7;
+    border: none
+}
+
+.neo-button {
+    width: 40px;
+    height: 40px;
+    outline: 0 !important;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #50C5B7, #50C5B7);
+    box-shadow: inset 20px 20px 60px #FEEBA7, 
+                inset -20px -20px 60px #FEEBA7;
+}
+
+.num{
+	
+	color:#eee !important;
+}
+
+.line{
+	color:#fff;
+}
+
+.neo-button:active {
+    border-radius: 50%;
+    background: #FEEBA7;
+    box-shadow:  28px 28px 57px #FEEBA7, 
+             -28px -28px 57px #FEEBA7;
+}
+
+.fa-facebook {
+    color: #41a196
+}
+
+.fa-linkedin {
+    color: #41a196
+}
+
+.fa-google {
+    color: #41a196
+}
+
+.fa-youtube {
+    color: #41a196
+}
+
+.fa-twitter {
+    color: #41a196
+}
+
+.profile_button{
+	color:#fff;
+	padding:10px; 
+    border:none;
+    outline:0 !important;
+    border-radius: 50px;
+    background: #50C5B7;
+    box-shadow:  28px 28px 57px #50C5B7, 
+                
+	
+}

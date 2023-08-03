@@ -9,7 +9,12 @@
             </div>
         </div>
     </div>
-
+  
+    <div class="container">
+      <div class="row justify-content-strech " id="cardWrapper">
+        
+      </div>
+    </div>
 
 
 </x-layout>

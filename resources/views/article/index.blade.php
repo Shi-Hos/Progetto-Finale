@@ -20,11 +20,6 @@
         </div>
       </div>
 
-      @if($article->category)
-      <a href="{{route('article.category' , ['category' => $article->category->id])}}" class="small fst-italic text-capitalize">{{$article->category->name}}</a>
-      @else
-      <p class="small fst-italic text-capitalize">Non categorizzato</p>
-      @endif
     
 
 </x-layout>
