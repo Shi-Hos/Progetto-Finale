@@ -13,9 +13,13 @@
                 {{ $article->subtitle }}
             </p>
             <p class="card-text text-truncate">{{ $article->body }}</p>
+            @if($article->category)
             <div><a href="{{ route('article.category', ['category' => $article->category->id]) }}"
                     class="small fst-italic text-capitalize card-text">{{ $article->category->name }}</a>
             </div>
+            @else
+            <p class="small fst-italic text-capitalize">Non categorizzato</p>
+            @endif
             <div class="text-light">
                 Redatto il {{ $article->created_at->format('d/m/Y') }} da
                 <a href="{{ route('article.user', ['user' => $article->user->id]) }}"
@@ -27,13 +31,6 @@
                     #{{$tag->name}}
                 @endforeach
             </p>
-
-
-            @if($article->category)
-            <a href="{{route('article.category' , ['category' => $article->category->id])}}" class="small fst-italic text-capitalize">{{$article->category->name}}</a>
-            @else
-            <p class="small fst-italic text-capitalize">Non categorizzato</p>
-            @endif
             <div class="mt-1 "><a href="{{ route('article.show', compact('article')) }}"
                     class="btn btn-primary">DETTAGLIO</a></div>
         </div>

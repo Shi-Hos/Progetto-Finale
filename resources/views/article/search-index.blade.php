@@ -27,9 +27,13 @@
                                         {{ $article->subtitle }}
                                     </p>
                                     <p class="card-text">{{ $article->body }}</p>
-                                    <div><a href="{{ route('article.search', ['category' => $article->category->id]) }}"
-                                            class="small fst-italic text-capitalize card-text">{{ $article->category->name }}</a>
+                                    @if($article->category)
+                                    <div><a href="{{ route('article.category', ['category' => $article->category->id]) }}"
+                                                class="small fst-italic text-capitalize card-text">{{ $article->category->name }}</a>
                                     </div>
+                                    @else
+                                    <p class="small fst-italic text-capitalize">Senza categoria</p>
+                                    @endif
                                     <div
                                         class="mt-1 card-footer d-flex justify-content-between align-items-center card-text">
                                         Redatto il {{ $article->created_at->format('d/m/Y') }} da <a
