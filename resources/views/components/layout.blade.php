@@ -25,19 +25,31 @@
         </ul>
     </div>
     @endif --}}
-
+    <body onload="setTimeout('document.getElementById(\'scompari\').style.display=\'none\'',2500)";>
+    </body>
     
     @if (session('message'))
-    <div class="container">
+    <div class="container spazio-container" id="scompari">
         <div class="mt-5 row justify-content-center align-content-center">
             <div class="col-12 col-md-4 col-lg-6">
-                <div class="text-center mt-5 alert alert-success">
+                <div class="text-center mt-5 alert alert-success spazio">
+                    <div class="dot-spinner">
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                    </div>
                     {{session('message')}}
                 </div>
             </div>
         </div>
     </div>
     @endif
+
     {{$slot}}
     <div class="min-vh-100">
         

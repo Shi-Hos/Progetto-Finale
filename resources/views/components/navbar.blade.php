@@ -67,14 +67,14 @@
                             </form>
                         </ul>
                     </li>
+                    @endguest
                 </ul>
-            @endguest
+            <form action="{{route('article.search')}}" method="get" class="d-flex">
+                <input type="search" class="me-3 form-control" name="query" placeholder="Cosa Stai Cercando?" aria-label="Search">
+                <button class="btn btn-outline-info" type="submit">
+                    Search
+                </button>
+            </form>
         </div>
-        <form action="{{route('article.search')}}" method="get" class="d-flex">
-            <input type="search" class="me-3 form-control" name="query" placeholder="Cosa Stai Cercando?" aria-label="Search">
-            <button class="btn btn-outline-info" type="submit">
-                Search
-            </button>
-        </form>
     </div>
 </nav>

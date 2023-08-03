@@ -8,7 +8,33 @@
                 <div class="col-xl-8 col-lg-9 col-md-12 col-sm-12 col-12 vh-100 d-flex justify-content-center align-items-center p-0">
                   <img class="logo-header" src="./image/logo,sito.png" alt="logo">
                   <h2 class="ps-5 text">
-                    Restare aggiornati non è mai stato cosi' semplice
+                    <span id="testo"></span>
+                    <script type="text/javascript">
+                      // testo da mostrare    
+                      var testo = "Restare aggiornati non è mai stato così semplice!";
+                      // output
+                      var output = "";
+                      // incrementatore
+                      var i = 0;
+                      // velocità di scrittura
+                      var speed = 100;
+                      // dichiaro la funzione
+                      function scrivi() {
+                          // creo l'output
+                          output += testo.charAt(i);
+                          // incremento
+                          i++;
+                          // scrittura
+                          document.getElementById("testo").innerHTML = output;
+                          // se è finito il testo
+                          if(i >= testo.length) {
+                              // fine
+                              clearInterval(s);
+                          }
+                      }
+                      // richiamo la funzione a intervalli
+                      s = setInterval("scrivi()",speed);
+                  </script>
                   </h2>
                     </div>
                 </div>

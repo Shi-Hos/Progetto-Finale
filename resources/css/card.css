@@ -30,7 +30,6 @@ p {
 body {
   display: grid;
   place-items: center;
-  height: 100vh;
 }
 
 h2 {
