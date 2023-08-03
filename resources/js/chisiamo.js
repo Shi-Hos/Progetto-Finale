@@ -38,13 +38,10 @@ function createUserCards(array) {
                             
                             <hr class="line">
                             
-                            <small class="mt-4">I am an android developer working at google Inc at california,USA</small>
+                            <small class="mt-4">${user.description}>
                             <div class="social-buttons mt-5"> 
-                            <button class="neo-button"><i class="fa fa-facebook fa-1x"></i> </button> 
+                            <button class="neo-button"><i class="instagramPurple fa fa-instagram fa-1x"></i> </button> 
                             <button class="neo-button"><i class="fa fa-linkedin fa-1x"></i></button> 
-                            <button class="neo-button"><i class="fa fa-google fa-1x"></i> </button> 
-                            <button class="neo-button"><i class="fa fa-youtube fa-1x"></i> </button>
-                            <button class="neo-button"><i class="fa fa-twitter fa-1x"></i> </button>
                     </div>
                     
                     <div class="profile mt-5">

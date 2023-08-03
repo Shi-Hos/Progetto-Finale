@@ -3,9 +3,12 @@
     width: 350px;
     border-radius: 10px;
     background: linear-gradient(145deg, #50C5B7 #50C5B7);
-    box-shadow:  20px 20px 60px #50C5B7, 
-             -20px -20px 60px #50C5B7;
-    border: none
+    box-shadow:  10px 10px 30px #50C5B7, 
+             -10px -10px 30px #50C5B7;
+    border: 2px solid #FEEBA7;
+}
+.instagramPurple{
+    color: #F502BD;
 }
 
 .neo-button {
@@ -29,35 +32,23 @@
 }
 
 .line{
+   
 	color:#fff;
 }
 
 .neo-button:active {
     border-radius: 50%;
     background: #FEEBA7;
-    box-shadow:  28px 28px 57px #FEEBA7, 
-             -28px -28px 57px #FEEBA7;
+    box-shadow:  18px 18px 24px #FEEBA7, 
+             -18px -18px 24px #50C5B7;
 }
 
-.fa-facebook {
-    color: #41a196
-}
+
 
 .fa-linkedin {
     color: #41a196
 }
 
-.fa-google {
-    color: #41a196
-}
-
-.fa-youtube {
-    color: #41a196
-}
-
-.fa-twitter {
-    color: #41a196
-}
 
 .profile_button{
 	color:#fff;
@@ -66,7 +57,5 @@
     outline:0 !important;
     border-radius: 50px;
     background: #50C5B7;
-    box-shadow:  28px 28px 57px #50C5B7, 
-                
-	
+    box-shadow:  28px 28px 57px #50C5B7;
 }
