@@ -22,8 +22,13 @@ class ArticleRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'required|max:100',
-            'body' => 'required|min:10',  
+            
+            'title' => 'required|unique:articles|min:5',
+            'subtitle' => 'required|unique:articles|min:5',
+            'body' => 'required|min:10',
+            'img' => 'image|required',
+            'category_id' => 'required',
+            // 'tags' =>'required',
         ];
 
         
@@ -33,6 +38,8 @@ class ArticleRequest extends FormRequest
         return[
             'title.required'=> ' il titolo è richiesto',
             'title.max'=> 'il tuo titolo è troppo corto',
+            'subitile.required'=> ' il sottotitolo è richiesto',
+            'subitile.max'=> 'il tuo sottotitolo è troppo corto',
             'body.required'=> ' il testo dell\'articolo e\' richiesto',
             'body.max'=> 'il tuo articolo è troppo corto',
         ];

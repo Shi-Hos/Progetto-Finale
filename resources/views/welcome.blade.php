@@ -75,9 +75,9 @@
   </div>
 
     <div class="container mt-5">
-        <div class="row mt-5 justify-content-around">
+        <div class="row mt-5 ms-5 justify-content-center">
           @foreach($articles as $article)
-          <div class="col-12 col-lg-3">
+          <div class="col-12 col-lg-4 ">
             <x-card :article='$article'></x-card>
           </div>
           @endforeach

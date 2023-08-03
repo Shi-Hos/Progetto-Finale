@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Tag;
 use App\Models\User;
 use App\Models\Article;
 use App\Models\Category;
@@ -34,23 +35,15 @@ class ArticleController extends Controller
      */
     public function store(ArticleRequest $request)
     {   
-        $request->validate([
-            'title' => 'required|unique:articles|min:5',
-            'subtitle' => 'required|unique:articles|min:5',
-            'body' => 'required|min:10',
-            'image' => 'image|required',
-            'category' => 'required',
-            'tags' =>'required',
 
-        ]);
-
+        
         $article = Article::create([
+            'user_id' => Auth::user()->id,
             'title' => $request->title,
             'subtitle' => $request->subtitle,
             'body' => $request->body,
-            'image' => $request->file('image')->store('public/images'),
+            'img' => $request->file('img')->store('public/img'),
             'category_id' => $request->category_id,
-            'user_id' => $request->user_id,
         ]);
 
         $tags = explode(',', $request->tags);
@@ -62,20 +55,6 @@ class ArticleController extends Controller
             $article->tags()->attach($newTag->id);
         }
 
-
-
-        Article::create(
-            [
-                'author' => Auth::user()->name,
-                'user_id' => Auth::user()->id,
-                'title' => $request->input('title'),
-                'subtitle'=>$request->input('subtitle'),
-                'body' => $request->input('body'),
-                'category_id' => $request->category,
-                'category_name' => $request->category,
-                'img' => $request->has('img') ? $request->file('img')->store('public/cover') : '/img/background.jpg'
-            ]
-        );
         return redirect()->route('article.index')->with('message', 'Articolo inserito con successo');
     }
 
@@ -107,7 +86,6 @@ class ArticleController extends Controller
         ]);
         $article->update(
             [
-                'author'=> Auth::user()->name,
                 'title' => $request->input('title'),
                 'body' => $request->input('body'),
                 'category' => $request->input('category'),

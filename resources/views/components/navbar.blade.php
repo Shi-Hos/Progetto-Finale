@@ -47,11 +47,11 @@
                         </a>
                         <ul class="dropdown-menu">
                             @if (Auth::user()->is_admin)
-                                <li><a class="dropdown-item ynav nav-link" href="{{ route('admin.dashboard') }}">Dashboard
+                                <li><a class="dropdown-item ynav " href="{{ route('admin.dashboard') }}">Dashboard
                                         Admin</a></li>
                             @endif
                             @if (Auth::user()->is_revisor)
-                                <li><a class="dropdown-item" href="{{ route('revisor.dashboard') }}">Dashboard del
+                                <li><a class="dropdown-item ynav" href="{{ route('revisor.dashboard') }}">Dashboard del
                                         revisore</a></li>
                             @endif
                             <li><a class=" ynav dropdown-item" href="{{ route('article.create') }}">Crea Articolo</a></li>
@@ -60,7 +60,7 @@
                             </li>
                             <li><a class="ynav dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
-              document.getElementById('logout-form').submit();">Logout</a>
+                                    document.getElementById('logout-form').submit();">Logout</a>
                             </li>
                             <form action="{{ route('logout') }}" id="logout-form" method="POST" class="d-none">
                                 @csrf
@@ -70,5 +70,11 @@
                 </ul>
             @endguest
         </div>
+        <form action="{{route('article.search')}}" method="get" class="d-flex">
+            <input type="search" class="me-3 form-control" name="query" placeholder="Cosa Stai Cercando?" aria-label="Search">
+            <button class="btn btn-outline-info" type="submit">
+                Search
+            </button>
+        </form>
     </div>
 </nav>

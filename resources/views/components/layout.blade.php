@@ -26,8 +26,8 @@
     
 
 
-    @if ($errors->any())
-    <div class="alert alert-danger">
+     @if ($errors->any())
+    <div class="mt-5 alert alert-danger">
         <ul>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
@@ -37,9 +37,15 @@
     @endif
 \\\
     @if (session('message'))
-        <div class="alert alert-success">
-            {{session('message')}}
+    <div class="container">
+        <div class="mt-5 row justify-content-center align-content-center">
+            <div class="col-12 col-md-4 col-lg-6">
+                <div class="text-center mt-5 alert alert-success">
+                    {{session('message')}}
+                </div>
+            </div>
         </div>
+    </div>
     @endif
     {{$slot}}
     <div class="min-vh-100">
