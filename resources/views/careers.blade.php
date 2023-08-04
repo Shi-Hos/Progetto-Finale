@@ -4,7 +4,35 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 vh-100 d-flex justify-content-center align-items-center  mb-3">
-                    <h1 class="display-1 text-white"  >LAVORA CON NOI</h1>
+                    <h1 class="display-1 text-white"  >
+                        <span id="testo"></span>
+                    <script type="text/javascript">
+                      // testo da mostrare    
+                      var testo = "LAVORA CON NOI";
+                      // output
+                      var output = "";
+                      // incrementatore
+                      var i = 0;
+                      // velocità di scrittura
+                      var speed = 100;
+                      // dichiaro la funzione
+                      function scrivi() {
+                          // creo l'output
+                          output += testo.charAt(i);
+                          // incremento
+                          i++;
+                          // scrittura
+                          document.getElementById("testo").innerHTML = output;
+                          // se è finito il testo
+                          if(i >= testo.length) {
+                              // fine
+                              clearInterval(s);
+                          }
+                      }
+                      // richiamo la funzione a intervalli
+                      s = setInterval("scrivi()",speed);
+                  </script>
+                    </h1>
                 </div>
             </div>
         </div>
@@ -57,7 +85,7 @@
         </div>
     </div> 
 
-    <div class="container mt-5 mb-5 my-5">
+    <div class="container mt-5 mb-5 my-5 contenuto animazione">
         <div class="row justify-content-start">
             <div class="my-3 col-12 col-md-6 my-5">
                 <div class="d-flex align-items-center justify-content-center rounded-circle  text-white circle-icon">
@@ -66,7 +94,7 @@
                 <h2 class="mt-3 text-center">Diventa Amministratore</h2>
                 <p class="ms-1">Il compito di un amministratore che gestisce un articolo è monitorare e moderare il contenuto, assicurandosi che sia conforme alle linee guida, rispondere ai commenti o interazioni degli utenti e garantire la qualità e l'accuratezza del materiale pubblicato.</p>
             </div>
-            <div class="my-3 col-12 col-md-6 my-5 text-end">
+            <div class="my-3 col-12 col-md-6 my-5 text-end contenuto animazione">
                 <div class="d-flex align-items-center justify-content-center rounded-circle  text-white circle-icon">
                     <img src="https://picsum.photos/302" alt="Icona" class="rounded-circle contornoimg">
                 </div>
@@ -74,7 +102,7 @@
                 <p class="ms-1">Il compito di un revisore che gestisce un articolo è quello di analizzare attentamente il contenuto per verificarne l'accuratezza, la coerenza e la qualità. Il revisore si assicura che l'articolo sia ben scritto, privo di errori grammaticali o di informazioni fuorvianti e che sia in linea con le linee guida e gli standard dell'editore o della piattaforma.</p>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center contenuto animazione">
             <div class="my-3 col-12 col-md-6 my-5">
                 <div class="d-flex align-items-center justify-content-center rounded-circle text-white circle-icon">
                     <img src="https://picsum.photos/301" alt="Icona" class="rounded-circle contornoimg ">
@@ -87,7 +115,7 @@
     
     
 
-    <div class="container-fluid">
+    <div class="container-fluid contenuto animazione">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 text-center">
                 @if ($errors->any())

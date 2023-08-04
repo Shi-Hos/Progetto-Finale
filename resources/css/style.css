@@ -448,3 +448,14 @@ h6 span{
   border: #FFEBA7 solid 4px;
 }
 
+/* animazioni lavora con noi */
+
+.contenuto {
+
+  transform: translateY(20%);
+  transition: transform 0.5s ease;
+}
+
+.animazione {
+  transform: translateY(0);
+}

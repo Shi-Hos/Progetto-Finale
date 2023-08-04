@@ -1,4 +1,4 @@
-                       <article class="card">
+                       <article class="card contenuto animazione">
                         <img class="card__background" src="https://picsum.photos/300"
                             alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
                             width="1920" height="2193" />
