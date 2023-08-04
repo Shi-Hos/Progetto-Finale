@@ -1,6 +1,16 @@
 <x-layout>
-    <x-searchbar/>
-    <div class="container mt-5">
+    <section class="lavora-con-noi-sfondo">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 vh-100 d-flex justify-content-center align-items-center  mb-3">
+                    <h1 class="display-1 text-white"  >LAVORA CON NOI</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-12 mt-5">
               <fieldset>
@@ -8,9 +18,9 @@
               </fieldset>
             </div>
         </div>
-    </div>
+    </div> --}}
     
-    <div class="container mt-5 my-5">
+    {{-- <div class="container mt-1 my-1">
         <div class="row justify-content-start">
             <div class=" my-3 col-12 col-md-6 my-5">
                 <h2>Become Admin</h2>
@@ -18,7 +28,7 @@
             </div>
         </div>
     </div>
-    <div class="container my-5 mt-5">
+    <div class="container my-1 mt-1">
         <div class="row justify-content-end">
             <div class=" my-3 col-12 col-md-6 my-5 text-end ">
                 <h2>Like a Revisor</h2>
@@ -26,14 +36,56 @@
             </div>
         </div>
     </div>
-    <div class="container my-5 mt-5">
+    <div class="container my-1 mt-1">
         <div class="row justify-content-center ">
             <div class="my-3  col-12 col-md-6 my-5">
                 <h2>Im a Writer</h2>
                 <p class="ms-1">Un writer è un professionista della scrittura che si occupa di creare contenuti scritti per diverse finalità e piattaforme. Il loro compito principale è quello di esprimere concetti, idee o informazioni in modo chiaro, coinvolgente e ben strutturato. I writer possono lavorare su una vasta gamma di materiali, come articoli, blog, contenuti per siti web, pubblicità, copie promozionali, script, storie, e molto altro. Essi devono adattarsi al tono e al linguaggio richiesto dal progetto, mantenendo sempre una comunicazione efficace con il pubblico target. La ricerca, l'organizzazione delle informazioni e la creatività sono elementi fondamentali per il successo del lavoro di un writer.</p>
             </div>
         </div>
+    </div> --}}
+
+    
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 mt-5">
+              <fieldset>
+                <h1 class=" text-center italic">Ecco i ruoli disponili</h1>
+              </fieldset>
+            </div>
+        </div>
+    </div> 
+
+    <div class="container mt-5 mb-5 my-5">
+        <div class="row justify-content-start">
+            <div class="my-3 col-12 col-md-6 my-5">
+                <div class="d-flex align-items-center justify-content-center rounded-circle  text-white circle-icon">
+                    <img src="https://picsum.photos/300" alt="Icona" class="rounded-circle contornoimg">
+                </div>
+                <h2 class="mt-3 text-center">Diventa Amministratore</h2>
+                <p class="ms-1">Il compito di un amministratore che gestisce un articolo è monitorare e moderare il contenuto, assicurandosi che sia conforme alle linee guida, rispondere ai commenti o interazioni degli utenti e garantire la qualità e l'accuratezza del materiale pubblicato.</p>
+            </div>
+            <div class="my-3 col-12 col-md-6 my-5 text-end">
+                <div class="d-flex align-items-center justify-content-center rounded-circle  text-white circle-icon">
+                    <img src="https://picsum.photos/302" alt="Icona" class="rounded-circle contornoimg">
+                </div>
+                <h2 class="mt-3 text-center">Diventa Revisore</h2>
+                <p class="ms-1">Il compito di un revisore che gestisce un articolo è quello di analizzare attentamente il contenuto per verificarne l'accuratezza, la coerenza e la qualità. Il revisore si assicura che l'articolo sia ben scritto, privo di errori grammaticali o di informazioni fuorvianti e che sia in linea con le linee guida e gli standard dell'editore o della piattaforma.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="my-3 col-12 col-md-6 my-5">
+                <div class="d-flex align-items-center justify-content-center rounded-circle text-white circle-icon">
+                    <img src="https://picsum.photos/301" alt="Icona" class="rounded-circle contornoimg ">
+                </div>
+                <h2 class="mt-3 text-center">Diventa Scrittore</h2>
+                <p class="ms-1">Uno scrittore è un professionista della scrittura che si occupa di creare contenuti scritti per diverse finalità e piattaforme. Il loro compito principale è quello di esprimere concetti, idee o informazioni in modo chiaro, coinvolgente e ben strutturato. Gli scrittori possono lavorare su una vasta gamma di materiali, come articoli, blog, contenuti per siti web, pubblicità, copie promozionali, sceneggiature, storie e molto altro. Devono adattarsi al tono e al linguaggio richiesto dal progetto, mantenendo sempre una comunicazione efficace con il pubblico target. La ricerca, l'organizzazione delle informazioni e la creatività sono elementi fondamentali per il successo del lavoro di uno scrittore.</p>
+            </div>
+        </div>
     </div>
+    
+    
 
     <div class="container-fluid">
         <div class="row justify-content-center">
@@ -47,7 +99,7 @@
                     </ul>
                 </div>
                 @endif
-                <form class="p-5" action="{{route('careers.submit')}}" method="POST">
+                <form class="p-5 border border-3 rounded" action="{{route('careers.submit')}}" method="POST">
                     @csrf
                     <div class="mb-3">
                         <label for="role" class="form-label">Per quale ruolo ti stai candidando?</label>
@@ -66,7 +118,7 @@
                                 <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Raccontaci la tua storia, descriviti come persona e perchè dovremmo assumerti">{{old('message')}}</textarea>
                             </div>
                             <div class="mt-2">
-                                <button class="btn btn-info text-white">Invia candidatura</button>
+                                <button class="btn btn-info">Invia candidatura</button>
                             </div>
                     </div>
                 </form>

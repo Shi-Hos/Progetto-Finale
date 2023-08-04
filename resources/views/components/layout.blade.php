@@ -51,9 +51,9 @@
     @endif
 
     {{$slot}}
-    <div class="min-vh-100">
+    {{-- <div class="min-vh-100">
         
-    </div>
+    </div> --}}
 
 
     <script src="https://kit.fontawesome.com/9ab4030d85.js" crossorigin="anonymous"></script>

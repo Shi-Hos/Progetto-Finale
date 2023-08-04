@@ -294,7 +294,7 @@ h6 span{
 /*NAVBAR */
 .navbar-custom{
     background-color: rgb(62, 76, 94);
-    border-bottom: #FFFF00 1px solid;
+    border-bottom: #FFEBA7 2px solid;
     height: 70px;
 }
 
@@ -426,5 +426,25 @@ h6 span{
     transform: scale(1);
     opacity: 1;
   }
+}
+
+.lavora-con-noi-sfondo{
+  height: 100vh;
+  width: 100%;
+  background-image: url('../../public/image/wrok.jpg') !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: solid #FFEBA7!important;
+  position: relative;
+}
+
+.italic{
+  font-style: italic!important;
+  text-decoration: underline;
+}
+
+.contornoimg{
+  border: #FFEBA7 solid 4px;
 }
 

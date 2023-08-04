@@ -27,4 +27,8 @@
   .lunghezza{
     width: 100%;
   }
+
+  .bordoF{
+    border-top: #FFEBA7 solid 2px!important;
+  }
   /* footer fine */
