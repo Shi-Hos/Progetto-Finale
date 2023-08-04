@@ -15,6 +15,4 @@
         
       </div>
     </div>
-
-
 </x-layout>

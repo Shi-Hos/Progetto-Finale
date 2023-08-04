@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="mt-5 text-center text-lg-start custom-color-f bordoF text-muted lunghezza ">
+<footer class="text-center text-lg-start custom-color-f bordoF text-muted lunghezza">
   
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
