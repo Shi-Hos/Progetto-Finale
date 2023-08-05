@@ -3,11 +3,12 @@
     <x-searchbar/>
     <div class="page-header">
         <div class="container-fluid">
+
           
             <div class="row justify-content-center">             
                 <div class="col-xl-8 col-lg-9 col-md-12 col-sm-12 col-12 vh-100 d-flex justify-content-center align-items-center p-0">
                   <img class="logo-header" src="./image/logo,sito.png" alt="logo">
-                  <h2 class="ps-5 text">
+                  <h2 class="ps-5 text-white">
                     <span id="testo"></span>
                     <script type="text/javascript">
                       // testo da mostrare    
@@ -74,7 +75,7 @@
     <div class="row justify-content-center">
         <div class="col-12 mt-5">
           <fieldset>
-            <h1 class="display-3 borderY text-center">I NOSTRI ULTIMI ARTICOLI</h1>
+            <h1 class="display-3 text-center">Anteprima articoli più recenti</h1>
           </fieldset>
         </div>
     </div>

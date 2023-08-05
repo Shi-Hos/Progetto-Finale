@@ -51,3 +51,6 @@
                 </div>
                 <button type="submit" class="btn btn-primary">SUBMIT</button>
             </form>
+        </div>
+    </div>
+</div>

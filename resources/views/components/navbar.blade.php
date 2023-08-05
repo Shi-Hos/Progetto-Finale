@@ -1,5 +1,5 @@
-<nav class="fixed-top navbar navbar-expand-lg  navbar-custom">
-    <div class="container-fluid">
+<nav class="fixed-top navbar navbar-expand-lg transparente navbar-custom">
+    <div class="container-xl">
 
         <a class="ynav navbar-brand" href="{{ route('welcome') }}"> <img class="logo-custom" src="/image/logo,sito.png"
                 alt="logo del sito"></a>
@@ -7,8 +7,8 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0">
 
 
                 <li class="nav-item dropdown">
@@ -69,8 +69,8 @@
                     </li>
                     @endguest
                 </ul>
-            <form action="{{route('article.search')}}" method="get" class="d-flex">
-                <input type="search" class="me-3 form-control" name="query" placeholder="Cosa Stai Cercando?" aria-label="Search">
+            <form action="{{route('article.search')}} me-5" method="get" class="d-flex">
+                <input type="search" class="me-1 form-control" name="query" placeholder="Cosa Stai Cercando?" aria-label="Search">
                 <button class="btn btn-outline-info" type="submit">
                     Search
                 </button>

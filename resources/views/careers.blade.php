@@ -85,30 +85,30 @@
         </div>
     </div> 
 
-    <div class="container mt-5 mb-5 my-5 contenuto animazione">
+    <div class="container mt-3 mb-2 my-5 contenuto animazione">
         <div class="row justify-content-start">
             <div class="my-3 col-12 col-md-6 my-5">
                 <div class="d-flex align-items-center justify-content-center rounded-circle  text-white circle-icon">
                     <img src="https://picsum.photos/300" alt="Icona" class="rounded-circle contornoimg">
                 </div>
-                <h2 class="mt-3 text-center">Diventa Amministratore</h2>
-                <p class="ms-1">Il compito di un amministratore che gestisce un articolo è monitorare e moderare il contenuto, assicurandosi che sia conforme alle linee guida, rispondere ai commenti o interazioni degli utenti e garantire la qualità e l'accuratezza del materiale pubblicato.</p>
+                <h2 class="mt-3 text-center text-dark">Diventa Amministratore</h2>
+                <p class="ms-1 text-dark">Il compito di un amministratore che gestisce un articolo è monitorare e moderare il contenuto, assicurandosi che sia conforme alle linee guida, rispondere ai commenti o interazioni degli utenti e garantire la qualità e l'accuratezza del materiale pubblicato.</p>
             </div>
             <div class="my-3 col-12 col-md-6 my-5 text-end contenuto animazione">
                 <div class="d-flex align-items-center justify-content-center rounded-circle  text-white circle-icon">
                     <img src="https://picsum.photos/302" alt="Icona" class="rounded-circle contornoimg">
                 </div>
-                <h2 class="mt-3 text-center">Diventa Revisore</h2>
-                <p class="ms-1">Il compito di un revisore che gestisce un articolo è quello di analizzare attentamente il contenuto per verificarne l'accuratezza, la coerenza e la qualità. Il revisore si assicura che l'articolo sia ben scritto, privo di errori grammaticali o di informazioni fuorvianti e che sia in linea con le linee guida e gli standard dell'editore o della piattaforma.</p>
+                <h2 class="mt-3 text-center text-dark">Diventa Revisore</h2>
+                <p class="ms-1 text-dark">Il compito di un revisore che gestisce un articolo è quello di analizzare attentamente il contenuto per verificarne l'accuratezza, la coerenza e la qualità. Il revisore si assicura che l'articolo sia ben scritto, privo di errori grammaticali o di informazioni fuorvianti e che sia in linea con le linee guida e gli standard dell'editore o della piattaforma.</p>
             </div>
         </div>
         <div class="row justify-content-center contenuto animazione">
-            <div class="my-3 col-12 col-md-6 my-5">
+            <div class="mt-1 col-12 col-md-6 my-5">
                 <div class="d-flex align-items-center justify-content-center rounded-circle text-white circle-icon">
                     <img src="https://picsum.photos/301" alt="Icona" class="rounded-circle contornoimg ">
                 </div>
-                <h2 class="mt-3 text-center">Diventa Scrittore</h2>
-                <p class="ms-1">Uno scrittore è un professionista della scrittura che si occupa di creare contenuti scritti per diverse finalità e piattaforme. Il loro compito principale è quello di esprimere concetti, idee o informazioni in modo chiaro, coinvolgente e ben strutturato. Gli scrittori possono lavorare su una vasta gamma di materiali, come articoli, blog, contenuti per siti web, pubblicità, copie promozionali, sceneggiature, storie e molto altro. Devono adattarsi al tono e al linguaggio richiesto dal progetto, mantenendo sempre una comunicazione efficace con il pubblico target. La ricerca, l'organizzazione delle informazioni e la creatività sono elementi fondamentali per il successo del lavoro di uno scrittore.</p>
+                <h2 class="mt-3 text-center text-dark">Diventa Scrittore</h2>
+                <p class="ms-1 text-dark">Uno scrittore è un professionista della scrittura che si occupa di creare contenuti scritti per diverse finalità e piattaforme. Il loro compito principale è quello di esprimere concetti, idee o informazioni in modo chiaro, coinvolgente e ben strutturato. Gli scrittori possono lavorare su una vasta gamma di materiali, come articoli, blog, contenuti per siti web, pubblicità, copie promozionali, sceneggiature, storie e molto altro. Devono adattarsi al tono e al linguaggio richiesto dal progetto, mantenendo sempre una comunicazione efficace con il pubblico target. La ricerca, l'organizzazione delle informazioni e la creatività sono elementi fondamentali per il successo del lavoro di uno scrittore.</p>
             </div>
         </div>
     </div>

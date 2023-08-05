@@ -11,4 +11,6 @@
     
     
     <x-article-form></x-article-form>
+
+    
 </x-layout>

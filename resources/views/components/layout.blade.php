@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js">
     <title>Fast News</title>
 </head>
-<body>
+<body class="bg-body-tertiary">
     <x-navbar></x-navbar>
     
       

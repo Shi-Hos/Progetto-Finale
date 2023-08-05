@@ -1,31 +1,14 @@
 <!-- Footer -->
-<footer class="text-center text-lg-start custom-color-f bordoF text-muted lunghezza">
+<footer class="text-center text-lg-start custom-color-f text-muted lunghezza">
+  <!-- Copyright -->
+  <div class="text-center bordoF p-3" style="background-color: rgb(0, 0, 46);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/"> FastNews.com</a>
+  </div>
+  <!-- Copyright -->
   
   <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <img class="logo-custom-foot "src="/image/logo,sito.png" alt="logo del sito">
-    <!-- Left -->
-  
-    <!-- Left -->
 
-    <!-- Right -->
-    <div>
-      <span class="me-4 text-inst ">
-        <i class="fa-brands fa-2x fa-facebook"></i>
-      </span>
-      
-      <span href="#" class="me-4 text-inst">
-        <i class="fa-brands fa-2x fa-twitter"></i>
-      </span>
-      <span href="#" class="me-4 text-inst">
-        <i class="fa-brands fa-2x fa-linkedin"></i>
-      </span>
-      <span href="#" class="me-4 text-inst">
-        <i class="fa-brands fa-2x fa-instagram"></i>
-      </span>
-    </div>
-    <!-- Right -->
-  </section>
   <!-- Section: Social media -->
 
   <!-- Section: Links  -->
@@ -36,6 +19,9 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
+          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <img class="logo-custom-foot "src="/image/logo,sito.png" alt="logo del sito">
+          </section>
           
           <p>
             il servizio di giornalismo più aggiornato d' Italia
@@ -88,6 +74,19 @@
 
         <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <div class="mb-5">
+            <span class="me-4 text-inst ">
+              <i class="fa-brands fa-2x fa-facebook"></i>
+            </span>
+            
+            <span href="#" class="me-4 text-inst">
+              <i class="fa-brands fa-2x fa-twitter"></i>
+            </span>
+      
+            <span href="#" class="me-4 text-inst">
+              <i class="fa-brands fa-2x fa-instagram"></i>
+            </span>
+          </div>
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Hai uno scoop? Comunicacelo</h6>
           <p><i class="fas fa-home me-3"></i> Lazio Roma it </p>

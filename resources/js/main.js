@@ -1,3 +1,4 @@
+// animazione dal basso
 let contenuti = document.querySelectorAll('.contenuto');
 
 window.addEventListener('scroll', mostraContenuti);
@@ -15,3 +16,4 @@ function mostraContenuti() {
         }
     });
 }
+
