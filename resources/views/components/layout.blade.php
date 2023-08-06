@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js">
     <title>Fast News</title>
 </head>
-<body>
+<body class="bg-body-tertiary">
     <x-navbar></x-navbar>
     
       
@@ -37,18 +37,29 @@
     @endif
 \\\
     @if (session('message'))
-    <div class="container">
+    <div class="container spazio-container" id="scompari">
         <div class="mt-5 row justify-content-center align-content-center">
             <div class="col-12 col-md-4 col-lg-6">
-                <div class="text-center mt-5 alert alert-success">
+                <div class="text-center mt-5 alert alert-success spazio">
+                    <div class="dot-spinner">
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                    </div>
                     {{session('message')}}
                 </div>
             </div>
         </div>
     </div>
     @endif
+
     {{$slot}}
-    <div class="min-vh-100">
+    {{-- <div class="min-vh-100">
         
     </div>
     <section class="container my-5">

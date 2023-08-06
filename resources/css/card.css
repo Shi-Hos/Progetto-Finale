@@ -30,7 +30,6 @@ p {
 body {
   display: grid;
   place-items: center;
-  height: 100vh;
 }
 
 h2 {
@@ -53,7 +52,7 @@ p {
 
 /* CARD COMPONENT */
 
-.card {
+.card{
   display: grid;
   place-items: center;
   width: 70vw;

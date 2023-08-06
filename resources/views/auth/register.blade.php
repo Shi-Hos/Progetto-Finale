@@ -38,13 +38,53 @@
 			</div>
 		</div> --}}
 		
+		<section class="register">
+
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 vh-100 d-flex flex-column justify-content-center align-items-center  mb-3">
+						<h1 class=" text-white text-outline"  >
+							<span id="testo"></span>
+						<script type="text/javascript">
+						  // testo da mostrare    
+						  var testo = "Registrati per restare sempre aggiornato.";
+						  // output
+						  var output = "";
+						  // incrementatore
+						  var i = 0;
+						  // velocità di scrittura
+						  var speed = 100;
+						  // dichiaro la funzione
+						  function scrivi() {
+							  // creo l'output
+							  output += testo.charAt(i);
+							  // incremento
+							  i++;
+							  // scrittura
+							  document.getElementById("testo").innerHTML = output;
+							  // se è finito il testo
+							  if(i >= testo.length) {
+								  // fine
+								  clearInterval(s);
+							  }
+						  }
+						  // richiamo la funzione a intervalli
+						  s = setInterval("scrivi()",speed);
+					  </script>
+						</h1>
+						<i class="mt-5 fa-solid display-3 text-white  fa-circle-arrow-down fa-beat"></i>
+					</div>
+					
+				</div>
+			</div>
+		</section>
 		
-		<div class="container-fluid">
-			<div class="row justify-content-around">
+		<div class="container-fluid  register2">
+			<div class="row justify-content-around contenuto animazione">
 				<div class="col-12 col-lg-4">
 					<div class="section">
 						<div class="container">
-							<div class="row full-height justify-content-center">
+							<div class="row full-height justify-content-center mb-5">
 								<div class="col-12 text-center align-self-center py-5">
 									<div class="section pb-5 pt-5 pt-sm-2 text-center">
 										<h6 class="mb-0 pb-3 mt-5"><span>Login</span><span>Registrati</span></h6>

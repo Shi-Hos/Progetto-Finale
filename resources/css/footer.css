@@ -1,6 +1,6 @@
 /* footer */
 .text-inst{
-    color:rgb(237, 222, 164)
+    color:yellow
   }
 .text-sf{
    color: #FFFF00;
@@ -14,8 +14,8 @@
 
 
   .custom-color-f{
-    background-color: rgb(62, 76, 94) !important;
-    color: rgb(237, 222, 164) !important;
+    background-color: grey!important;
+    color: yellow !important;
   }
 
   
@@ -26,5 +26,10 @@
 
   .lunghezza{
     width: 100%;
+  }
+
+  .bordoF{
+    border-top: yellow solid 2px!important;
+    border-bottom: yellow solid 2px!important;
   }
   /* footer fine */
