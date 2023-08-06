@@ -1,7 +1,7 @@
 <!-- Footer -->
 <footer class="text-center text-lg-start custom-color-f text-muted lunghezza">
   <!-- Copyright -->
-  <div class="text-center bordoF p-3" style="background-color: rgb(0, 0, 46);">
+  <div class="text-center bordoF p-3" style="background-color: #02032E;">
     © 2023 Copyright:
     <a class="text-reset fw-bold" href="https://mdbootstrap.com/"> FastNews.com</a>
   </div>
