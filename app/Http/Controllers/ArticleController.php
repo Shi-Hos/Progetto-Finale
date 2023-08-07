@@ -6,6 +6,7 @@ use App\Models\Tag;
 use App\Models\User;
 use App\Models\Article;
 use App\Models\Category;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -44,7 +45,10 @@ class ArticleController extends Controller
             'body' => $request->body,
             'img' => $request->file('img')->store('public/img'),
             'category_id' => $request->category_id,
+            'slug'=> Str::slug($request->title),
+            
         ]);
+
 
         $tags = explode(',', $request->tags);
 
@@ -89,6 +93,7 @@ class ArticleController extends Controller
                 'title' => $request->input('title'),
                 'body' => $request->input('body'),
                 'category' => $request->input('category'),
+                'slug'=> Str::slug($request->title),
                 
             ]
         );

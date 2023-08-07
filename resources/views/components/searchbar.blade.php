@@ -1,4 +1,4 @@
-{{-- <div class="container mt-5">
+<div class="container mt-5">
 
     <div class="row bg-warning height d-flex justify-content-center align-items-center mt-5 ">
 
@@ -15,4 +15,4 @@
     </div>
     
   </div>
-   --}}
+  
