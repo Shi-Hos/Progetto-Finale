@@ -26,7 +26,7 @@
     
 
 
-     @if ($errors->any())
+     {{-- @if ($errors->any())
     <div class="mt-5 alert alert-danger">
         <ul>
             @foreach ($errors->all() as $error)
@@ -34,8 +34,8 @@
             @endforeach
         </ul>
     </div>
-    @endif
-\\\
+    @endif --}}
+
     @if (session('message'))
     <div class="container spazio-container" id="scompari">
         <div class="mt-5 row justify-content-center align-content-center">

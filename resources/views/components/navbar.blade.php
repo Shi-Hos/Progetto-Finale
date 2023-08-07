@@ -55,6 +55,11 @@
                                 <li><a class=" dropdown-item ynav" href="{{ route('revisor.dashboard') }}">Dashboard del
                                         revisore</a></li>
                             @endif
+                            @if (Auth::user()->is_writer)
+                            <li><a class="dropdown-item ynav" href="{{ route('writer.dashboard') }}">Dashboard del
+                                    redattore</a></li>
+                            @endif
+                            
                             <li><a class=" ynav dropdown-item" href="{{ route('article.create') }}">Crea Articolo</a></li>
                             <li>
                                 <hr class="dropdown-divider">

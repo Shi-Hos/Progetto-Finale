@@ -17,7 +17,7 @@
                 @foreach ($articles as $article)
                     <div class="col-12 col-md-4 d-flex justify-content-center">
                         <article class="card">
-                            <img class="card__background" src="https://picsum.photos/300"
+                            <img class="card__background" src="{{Storage::url($article->img)}}"
                                 alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
                                 width="1920" height="2193" />
                             <div class="card__content | flow">
@@ -43,6 +43,7 @@
                                     <div class="mt-1"><a href="{{ route('article.show', compact('article')) }}"
                                             class="btn btn-primary">DETTAGLIO</a></div>
                                 </div>
+                                <span class="small fst-italic text-muted">Tempo di lettura {{$article->readDuration()}}</span>
                             </div>
                         </article>
                     </div>

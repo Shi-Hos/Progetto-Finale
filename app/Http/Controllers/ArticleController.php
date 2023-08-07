@@ -11,12 +11,27 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\ArticleRequest;
+use Illuminate\Support\Facades\Storage;
 
 class ArticleController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+
+     public function destroy(Article $article){
+        foreach($article->tags as $tag){
+          $article->tags()->detach($tag);
+
+     }
+     $article->delete();
+     return redirect(route('writer.dashboard'))->with('message', 'Articolo correttamente eliminato');
+    }
+
+     public function edit(Article $article){
+        return view('article.edit', compact('article'));
+     }
+
     public function index()
     {
         $articles = Article::where('is_accepted', true)->orderBy('created_at', 'desc')->get();
@@ -73,10 +88,6 @@ class ArticleController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Article $article)
-    {
-        return view('article.edit', compact('article'));
-    }
 
     /**
      * Update the specified resource in storage.
@@ -84,29 +95,48 @@ class ArticleController extends Controller
     public function update(Request $request, Article $article)
     {
         $request->validate([
-            'title' =>'required',
-            'body' =>'required',
-            'category' =>'required'
+            'title' =>'required|min:5|unique:articles,title,'.$article->id,
+            'subtitle' =>'required|min:5|unique:articles,subtitle,'.$article->id,
+            'body' =>'required|min:10',
+            'image' =>'image',
+            'category' =>'required',
+            'tags' =>'required',
         ]);
         $article->update(
             [
                 'title' => $request->input('title'),
+                'subtitle' => $request->input('subtitle'),
                 'body' => $request->input('body'),
-                'category' => $request->input('category'),
+                'category_id' => $request->category,
                 'slug'=> Str::slug($request->title),
                 
             ]
         );
-        return redirect()->route('welcome')->with('message', 'Articolo modificato con successo');
+
+        if($request->image){
+            Storage::delete($article->image);
+            $article->update(['img' => $request->file('image')->store('public/img')]);
+        }
+
+        $tags = explode(',' , $request->tags);
+        $newtags = [];
+
+        foreach ($tags as $tag) {
+            $newTag = Tag::updateOrCreate([
+                'name' => $tag,
+            ]);
+            $newtags[] = $newTag->id;
+        }
+
+        $article->tags()->sync($newtags);
+
+        return redirect()->route('writer.dashboard')->with('message', 'Articolo modificato con successo');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Article $article)
-    {
-        //
-    }
+
 
     public function __construct()
     {
