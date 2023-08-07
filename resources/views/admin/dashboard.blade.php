@@ -73,9 +73,6 @@
         </div>
     </div>
 
-
-
-
     @if (session('message'))
     <div class="container">
         <div class="mt-5 row justify-content-center align-content-center">

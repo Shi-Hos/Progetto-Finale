@@ -9,8 +9,8 @@
         </div>
     </div>
   
-    <div class="container">
-      <div class="row justify-content-strech " id="cardWrapper">
+    <div class="container bgColor">
+      <div class="row justify-content-evenly" id="cardWrapper">
         
       </div>
     </div>
