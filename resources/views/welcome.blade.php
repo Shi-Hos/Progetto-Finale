@@ -7,8 +7,8 @@
           
             <div class="row justify-content-center">             
                 <div class="col-xl-8 col-lg-9 col-md-12 col-sm-12 col-12 vh-100 d-flex justify-content-center align-items-center p-0">
-                  <img class="logo-header" src="./image/logo,sito.png" alt="logo">
-                  <h2 class="ps-5 text-white">
+                 
+                  <h2 class="ps-5 mt-5 text-inst">
                     <span id="testo"></span>
                     <script type="text/javascript">
                       // testo da mostrare    
@@ -43,34 +43,34 @@
         </div>
     </div>
     
-    {{-- Seconda Card Con Titolo --}}
+    Seconda Card Con Titolo 
     <div class="card-section">
-        <div class="container-fluid">
-            <div class="card-block bg-white card-borderY mb30">
+        <div class="container-fluid bg-custom-sap">
+            <div class="card-block  card-borderY mb30">
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <!-- section-title -->
                         <div class="section-title mb-0">
-                            <h2 class=" w-2 header-writers text-black">Il sapere di essere informati . Illuminiamo menti con sapienti ragioni, scopri il sapere, è la nostra missione!</h2>
-        @                    <p class="header-writers text-black mt-4">Articoli da tutto il mondo, portiamo il sapere anche dove non è concesso, la nostra forza siete voi </p>
-                                <h3 class="w-3 header-writers text-black display-6">Grazie</h3>
+                            <h2 class=" w-2 header-writers text-inst">Il sapere di essere informati . Illuminiamo menti con sapienti ragioni, scopri il sapere, è la nostra missione!</h2>
+                           <p class="header-writers mt-4 text-inst">Articoli da tutto il mondo, portiamo il sapere anche dove non è concesso, la nostra forza siete voi </p>
+                                <h3 class="w-3 header-writers display-6 text-inst">Grazie</h3>
                         </div>
                         <!-- /.section-title -->
                     </div>
                 </div>
             </div>
-            {{-- Inseriremo il Created By --}}
+          Inseriremo il Created By 
              </div>
             </div> 
   
     
        
     </header> 
-  <div class="container mt-5">
-    <div class="row justify-content-center">
+  <div class=" container mt-5 bg-custom-sap borderY">
+    <div class="row justify-content-center ">
         <div class="col-12 mt-5">
           <fieldset>
-            <h1 class="display-3 text-center">Anteprima articoli più recenti</h1>
+            <h1 class="display-3 text-inst text-center">Anteprima articoli più recenti</h1>
           </fieldset>
         </div>
     </div>
@@ -79,8 +79,8 @@
 
   
 
-{{-- PER DAVIDE, DA CONTROLLARE --}}
-  {{-- <div class="container">
+{{-- PER DAVIDE, DA CONTROLLARE  --}}
+   <div class="container">
 <div class="row justify-content-center">
   <div class="col-lg-4" id="animation-container">
     <script>
@@ -94,7 +94,7 @@
       })
     </script>
   </div>
-</div> --}}
+</div>
 
 
 
@@ -112,11 +112,11 @@
       </div>  
 
 
-      <div class="container mt-5">
+      <div class="container mt-5 ">
         <div class="row justify-content-center">
             <div class="col-12 mt-5">
               <fieldset>
-                <h4 class="borderY text-center p-3">Ciao. Controlla comodamente il meteo della tua città!</h4>
+                <h4 class="borderY text-center p-3">Controlla comodamente il meteo della tua città!</h4>
               </fieldset>
             </div>
         </div>
@@ -133,7 +133,7 @@
       </div>
   
       <div class="not-found">
-          <img src="image/404.png">
+          <img src="image/">
           <p>Oops! Posizione non valida :/</p>
       </div>
   

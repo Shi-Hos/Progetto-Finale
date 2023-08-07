@@ -1,4 +1,4 @@
-// inizio sezione counter
+
 
 function createinterval(number, element , timing){
 let counter = 0;
@@ -11,13 +11,11 @@ let interval = setInterval(() => {
         clearInterval(interval);
     }
 
-}, timing);
+}, timing)};
 
-}
+// }
 
-let firstNumber = document.querySelector('#firstNumber');
-let secondNumber = document.querySelector('#secondNumber');
-let thirdNumber = document.querySelector('#thirdNumber');
+
 
 
 // fine sezione counter

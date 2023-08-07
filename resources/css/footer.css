@@ -1,12 +1,12 @@
 /* footer */
 .text-inst{
-    color:yellow
+    color: rgb(237, 222, 164)
   }
 .text-sf{
-   color: #FFFF00;
+   color: rgb(237, 222, 164);
 }
 
-  
+
   .logo-custom-foot{
     height: 140px;
     width: 200px;
@@ -14,8 +14,8 @@
 
 
   .custom-color-f{
-    background-color: grey!important;
-    color: yellow !important;
+    background-color:  rgb(21, 50, 67) !important;
+    color: rgb(237, 222, 164) !important;
   }
 
   
@@ -29,7 +29,7 @@
   }
 
   .bordoF{
-    border-top: yellow solid 2px!important;
-    border-bottom: yellow solid 2px!important;
+    border-top: rgb(21, 50, 67)!important;
+    border-bottom: rgb(21, 50, 67)!important;
   }
   /* footer fine */

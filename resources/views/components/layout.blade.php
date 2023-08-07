@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js">
     <title>Fast News</title>
 </head>
-<body class="bg-body-tertiary">
+<body class="bg-custom">
     <x-navbar></x-navbar>
     
       
@@ -59,10 +59,10 @@
     @endif
 
     {{$slot}}
-    {{-- <div class="min-vh-100">
+     <div class="min-vh-100">
         
     </div>
-    <section class="container my-5">
+    <section class="container my-5 bg-custom-sap">
         <div class="row">
           <div class="col-12 col-md-6">
              <img src="./image/img-counter.png" class="img-fluid rounded-circle p-3 border-p d-block mx-auto" alt="#">  
@@ -70,9 +70,9 @@
           <div class="col-12 col-md-6 text-p">
                  <h3 class="text-center special-font">About Us</h3>
     
-                 <p class="lead"><span id="firstNumber" class="number">0</span>Utenti registrati</p>
-                 <p class="lead"><span id="secondNumber" class="number">0</span>Articoli creati</p>
-                 <p class="lead"><span id="thirdNumber" class="number">0</span>Utenti online</p>
+                 <p class="lead"><span id="firstNumber" class="number text-inst fa-2x">0</span class="">Utenti registrati</p>
+                 <p class="lead"><span id="secondNumber" class="number text-inst fa-2x">0</span class="">Articoli creati</p>
+                 <p class="lead"><span id="thirdNumber" class="number text-inst fa-2x">0</span class="">Utenti online</p>
           </div>    
         </div> 
       </section>

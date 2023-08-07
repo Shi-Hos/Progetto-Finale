@@ -2,6 +2,7 @@
     <div class="container-xl">
 
         <a class="ynav navbar-brand" href="{{ route('welcome') }}"> <img class="logo-custom" src="/image/logo,sito.png"
+
                 alt="logo del sito"></a>
         <button class="navbar-toggler text-inst" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +70,7 @@
                     </li>
                     @endguest
                 </ul>
-            <form action="{{route('article.search')}} me-5" method="get" class="d-flex">
+            <form action="{{route('article.search')}}" method="get" class="d-flex">
                 <input type="search" class="me-1 form-control" name="query" placeholder="Cosa Stai Cercando?" aria-label="Search">
                 <button class="btn btn-outline-info" type="submit">
                     Search
