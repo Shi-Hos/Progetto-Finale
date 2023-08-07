@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {{-- google fonts --}}
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;600&family=Lumanosimo&display=swap');
-      </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;
-    600&family=Lumanosimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Jost:wght@200;300;600&family=Lumanosimo&display=swap" rel="stylesheet">
+
     {{-- font awesome --}}
     <script src="https://kit.fontawesome.com/d0364d091f.js" crossorigin="anonymous"></script>
 
@@ -19,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js">
     <title>Fast News</title>
 </head>
-<body class="bg-custom">
+<body class="bg-custom-body">
     <x-navbar></x-navbar>
     
       
@@ -62,12 +59,12 @@
      <div class="min-vh-100">
         
     </div>
-    <section class="container my-5 bg-custom-sap">
+    <section class="container my-5 ">
         <div class="row">
           <div class="col-12 col-md-6">
              <img src="./image/img-counter.png" class="img-fluid rounded-circle p-3 border-p d-block mx-auto" alt="#">  
             </div>         
-          <div class="col-12 col-md-6 text-p">
+          <div class="col-12 col-md-6 text-p ">
                  <h3 class="text-center special-font">About Us</h3>
     
                  <p class="lead"><span id="firstNumber" class="number text-inst fa-2x">0</span class="">Utenti registrati</p>

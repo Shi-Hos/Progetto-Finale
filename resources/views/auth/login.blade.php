@@ -19,7 +19,7 @@
                         <div class="section text-center">
                           <h4 class="mb-4 pb-3">Login</h4>
                           <div class="form-group">
-                            <input type="email" name="email" class="form-style" placeholder="Inserisci Email" id="email" autocomplete="off">
+                            <input type="email" name="email" class="form-style" placeholder="Inserisci Email" id="email-login" autocomplete="off">
                             <i class="input-icon uil uil-at"></i>
                           </div>	
                           <div class="form-group mt-2">

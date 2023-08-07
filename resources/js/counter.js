@@ -1,4 +1,8 @@
+console.log("ciao");
+let firstNumber = document.querySelector('#firstNumber');
 
+let secondNumber = document.querySelector('#secondNumber');
+let thirdNumber = document.querySelector('#thirdNumber');
 
 function createinterval(number, element , timing){
 let counter = 0;
@@ -13,7 +17,6 @@ let interval = setInterval(() => {
 
 }, timing)};
 
-// }
 
 
 
@@ -39,6 +42,7 @@ let observer = new IntersectionObserver( (entries)=>{
 } );
 
 observer.observe(thirdNumber);
+console.log(confirm)
 // fine observer
 
 

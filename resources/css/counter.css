@@ -1,3 +1,6 @@
+
+
+
 .number{
     font-size: 50px;
     color: #FFEBA7;
@@ -5,7 +8,7 @@
 }
 
 .special-font{
-    color: #FFEBA7;
-    font-family: 'Lumanosimo', cursive;
+    font-family: 'Cookie', cursive !important;
+    font-size: 80px;
 }
 
