@@ -43,6 +43,7 @@
                                     <div class="mt-1"><a href="{{ route('article.show', compact('article')) }}"
                                             class="btn btn-primary">DETTAGLIO</a></div>
                                 </div>
+                                <span class="small fst-italic text-muted">Tempo di lettura {{$article->readDuration()}}</span>
                             </div>
                         </article>
                     </div>
