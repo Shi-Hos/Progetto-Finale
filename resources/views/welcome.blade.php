@@ -1,6 +1,6 @@
 <x-layout>
   <header>
-    <x-searchbar/>
+
     <div class="page-header">
         <div class="container-fluid">
 
