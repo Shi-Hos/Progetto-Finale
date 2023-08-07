@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js">
     <title>Fast News</title>
 </head>
-<body class="bg-custom">
+<body class="bgColorBlue">
     <x-navbar></x-navbar>
     
       
@@ -59,7 +59,7 @@
     @endif
 
     {{$slot}}
-     <div class="min-vh-100">
+     <div class="">
         
     </div>
     <section class="container my-5 bg-custom-sap">

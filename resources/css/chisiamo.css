@@ -1,10 +1,14 @@
+.bgColorBlue{
+   background-color:#0a1d29; 
+}
 .userCard{
 	color:#50C5B7;
     width: 350px;
     border-radius: 10px;
-    background: linear-gradient(145deg, #50C5B7 #50C5B7);
-    box-shadow:  10px 10px 30px #50C5B7, 
-             -10px -10px 30px #50C5B7;
+    background-color: #20455a;
+    
+    box-shadow:  
+             -5px -5px 15px #50C5B7;
     border: 2px solid #FEEBA7;
 }
 .instagramPurple{
@@ -21,9 +25,8 @@
     border: none;
     margin-right: 10px;
     border-radius: 50%;
-    background: linear-gradient(145deg, #50C5B7, #50C5B7);
-    box-shadow: inset 20px 20px 60px #FEEBA7, 
-                inset -20px -20px 60px #FEEBA7;
+    background: linear-gradient(145deg, #ffffff, #FEEBA7);
+   
 }
 
 .num{
@@ -39,8 +42,8 @@
 .neo-button:active {
     border-radius: 50%;
     background: #FEEBA7;
-    box-shadow:  18px 18px 24px #FEEBA7, 
-             -18px -18px 24px #50C5B7;
+    /* box-shadow:  18px 18px 24px #FEEBA7, 
+             -18px -18px 24px #50C5B7; */
 }
 
 
@@ -50,12 +53,3 @@
 }
 
 
-.profile_button{
-	color:#fff;
-	padding:10px; 
-    border:none;
-    outline:0 !important;
-    border-radius: 50px;
-    background: #50C5B7;
-    box-shadow:  28px 28px 57px #50C5B7;
-}

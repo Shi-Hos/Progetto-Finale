@@ -10,7 +10,7 @@ let image = document.querySelector('#image');
 function createUserCards(array) {
     array.forEach(user => {
         let div = document.createElement('div');
-        div.classList.add('col-12', 'col-md-6','my-5')
+        div.classList.add('col-12', 'col-md-4','my-5')
         div.innerHTML = `
         <div class="container d-flex justify-content-center">
                 <div class="userCard p-3 py-4">
@@ -44,11 +44,7 @@ function createUserCards(array) {
                             <button class="neo-button"><i class="fa fa-linkedin fa-1x"></i></button> 
                     </div>
                     
-                    <div class="profile mt-5">
-                    
-                    <button class="profile_button px-5">View profile</button>
-
-                    </div>
+                  
                 </div>
             </div>
         </div>

@@ -79,22 +79,7 @@
 
   
 
-{{-- PER DAVIDE, DA CONTROLLARE  --}}
-   <div class="container">
-<div class="row justify-content-center">
-  <div class="col-lg-4" id="animation-container">
-    <script>
-      let animation = bodymovin.loadAnimation({
-        container: document.getElementById('animation-container'),
-        path: 'animazionepanino.json',
-        renderer:'svg',
-        loop: true,
-        autoplay: true,
-        name: 'panino',
-      })
-    </script>
-  </div>
-</div>
+
 
 
 
@@ -114,7 +99,7 @@
 
       <div class="container mt-5 ">
         <div class="row justify-content-center">
-            <div class="col-12 mt-5">
+            <div class="col-12 col-md-8 mt-5">
               <fieldset>
                 <h4 class="borderY text-center p-3">Controlla comodamente il meteo della tua città!</h4>
               </fieldset>
