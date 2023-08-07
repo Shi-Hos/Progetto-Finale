@@ -310,7 +310,7 @@ h6 span{
   backdrop-filter: blur(10px);
   border-bottom:#FFEBA7 solid 2px;
 
-    height: 80px;
+    height: 85px;
     
 }
 
@@ -327,12 +327,9 @@ h6 span{
   color:#FFEBA7;
 }
 
-.ynav:hover, 
-.ynav:focus
-{
-  color: rgb(21, 50, 67) !important;
-  /* background-color: #FFEBA7; */
-}
+ .ynav:hover, .ynav.active {
+   color: white;
+ } 
 
 /* ULTIMI ARTICOLI TITLE */
 .borderY{

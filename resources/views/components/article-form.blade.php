@@ -1,4 +1,13 @@
 <div class="container-fluid">
+    @if ($errors->any())
+    <div class="mt-5 alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
     <div class="row justify-content-center">
         <div class="col-12 col-md-6">
             <form class="border p-5" method="POST" enctype="multipart/form-data" action="{{ route('article.store') }}">

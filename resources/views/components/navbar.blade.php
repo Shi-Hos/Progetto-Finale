@@ -12,7 +12,7 @@
             <ul class="navbar-nav  mb-2 mb-lg-0">
 
 
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown ynav">
                     <a class="ynav nav-link dropdown-toggle text-inst" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Categorie
@@ -55,6 +55,11 @@
                                 <li><a class="dropdown-item ynav" href="{{ route('revisor.dashboard') }}">Dashboard del
                                         revisore</a></li>
                             @endif
+                            @if (Auth::user()->is_writer)
+                            <li><a class="dropdown-item ynav" href="{{ route('writer.dashboard') }}">Dashboard del
+                                    redattore</a></li>
+                            @endif
+                            
                             <li><a class=" ynav dropdown-item" href="{{ route('article.create') }}">Crea Articolo</a></li>
                             <li>
                                 <hr class="dropdown-divider">
