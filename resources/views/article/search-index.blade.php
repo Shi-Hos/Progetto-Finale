@@ -4,14 +4,14 @@
         <div class="row justify-content-center">
             <div class="col-12 mt-5">
                 <fieldset>
-                    <h1 class="display-6 borderY text-center">Hai Cercato: {{ $query }}</h1>
+                    <h3 class=" text-inst display-6 borderY text-center">HAI CERCATO: {{ $query }}</h3>
                 </fieldset>
             </div>
         </div>
     </div>
 
 
-    <div class="container">
+    <div class="container mb-5">
         <div class="row justify-content-center">
             @if ($articles->isNotEmpty())
                 @foreach ($articles as $article)

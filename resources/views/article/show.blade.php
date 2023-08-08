@@ -1,19 +1,19 @@
 <x-layout>
     
-    <div class="container mt-5">
+    <div class="container p-4 mt-5">
         <div class="row justify-content-center">
-            <div class="col-12 mt-5">
+            <div class="col-12 p-4 mt-5">
               <fieldset>
-                <h1 class="display-3 borderY text-center">ECCO IL TUO ARTICOLO</h1>
+                <h1 class="display-3 borderY text-center p-3" style="color: #ffeba7">ECCO IL TUO ARTICOLO</h1>
               </fieldset>
             </div>
         </div>
     </div>
 
 
-    <div class="container-fluid mt-5">
-        <div class="row justify-content-center mt-3">
-            <div class="col-12  col-md-4">
+    <div class="container p-0 mt-5">
+        <div class="row justify-content-center ">
+            <div class="col-12 col-md-4">
                 <img src="{{Storage::url($article->img)}}" alt="" class="img-fluid">  
 
             </div>
@@ -21,12 +21,14 @@
                 <h1>{{$article->title}}</h1>
                 <h2 class="text-black">{{$article->subtitle}}</h2>
                 <p class="text-black"> {{$article->body}}</p>
-                <a href="{{ route('welcome') }}" class="btn m-1 bg-warning">TORNA INDIETRO</a>
-                @if($article->category)
-                <a href="{{route('article.category' , ['category' => $article->category->id])}}" class="small fst-italic text-capitalize">{{$article->category->name}}</a>
-                @else
-                <p class="small fst-italic text-capitalize">Non categorizzato</p>
-                @endif
+                <div>
+                    @if($article->category)
+                    <a href="{{route('article.category' , ['category' => $article->category->id])}}" class="small fst-italic text-capitalize">{{$article->category->name}}</a>
+                    @else
+                    <p class="small fst-italic  text-capitalize">Non categorizzato</p>
+                    @endif
+                </div>
+                <a href="{{ route('article.index') }}" class="btn  btn-bg-warning">TORNA INDIETRO</a>
             </div>
         </div>
     </div>

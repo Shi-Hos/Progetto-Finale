@@ -35,6 +35,9 @@
 
     @if (session('message'))
     <div class="container spazio-container" id="scompari">
+        <body onload="setTimeout('document.getElementById('scompari').style.display='none'',2500);setTimeout('document.getElementById('compari').style.display='block'',2500);">
+            ...
+            </body>
         <div class="mt-5 row justify-content-center align-content-center">
             <div class="col-12 col-md-4 col-lg-6">
                 <div class="text-center mt-5 alert alert-success spazio">
@@ -56,23 +59,7 @@
     @endif
 
     {{$slot}}
-     <div class="">
-        
-    </div>
-    <section class="container my-5 ">
-        <div class="row">
-          <div class="col-12 col-md-6">
-             <img src="./image/img-counter.png" class="img-fluid rounded-circle p-3 border-p d-block mx-auto" alt="#">  
-            </div>         
-          <div class="col-12 col-md-6 text-p ">
-                 <h3 class="text-center special-font">About Us</h3>
-    
-                 <p class="lead"><span id="firstNumber" class="number text-inst fa-2x">0</span class="">Utenti registrati</p>
-                 <p class="lead"><span id="secondNumber" class="number text-inst fa-2x">0</span class="">Articoli creati</p>
-                 <p class="lead"><span id="thirdNumber" class="number text-inst fa-2x">0</span class="">Utenti online</p>
-          </div>    
-        </div> 
-      </section>
+
 
     <script src="https://kit.fontawesome.com/9ab4030d85.js" crossorigin="anonymous"></script>
     <x-footer></x-footer>

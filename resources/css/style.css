@@ -466,15 +466,15 @@ h6 span{
   position: relative;
 }
 
-.register2{
+/* .register2{
   width: 100%;
   background-image: url('../../public/image/log.jpg') !important;
 
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   /* border-bottom: solid yellow!important; */
-  position: relative;
-}
+  /* position: relative;
+} */
 
 .text-outline {
   -webkit-text-stroke: 0.1px ;

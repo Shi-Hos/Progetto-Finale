@@ -3,14 +3,14 @@
         <div class="row justify-content-center">
             <div class="col-12 mt-5">
               <fieldset>
-                <h1 class="display-3 borderY text-center">ARTICOLI PER CATEGORIA : {{$category->name}}</h1>
+                <h3 class="display-6 borderY text-inst text-center">ARTICOLI PER CATEGORIA : {{$category->name}}</h3>
               </fieldset>
             </div>
         </div>
     </div>
 
-    <div class="container mt-5">
-        <div class="row mt-5 justify-content-around">
+    <div class="container mb-5 ">
+        <div class="row mt-3 justify-content-around">
             @if ($category->articles->isNotEmpty())
           @foreach($category->articles->where('is_accepted', true) as $article)
           <div class="col-12 col-lg-4">
