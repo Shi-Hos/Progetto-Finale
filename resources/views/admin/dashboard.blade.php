@@ -4,7 +4,7 @@
         <div class="row justify-content-center">
             <div class="col-12 mt-5">
               <fieldset>
-                <h1 class="display-3 borderY text-center">BENTORNATO ADMIN {{Auth::user()->name}}</h1>
+                <h1 class="display-3 borderY text-center p-3" style="color: #ffeba7">BENTORNATO ADMIN {{Auth::user()->name}}</h1>
               </fieldset>
             </div>
         </div>
@@ -74,6 +74,9 @@
     </div>
 
     @if (session('message'))
+    <body onload="setTimeout('document.getElementById(\'scompari\').style.display=\'none\'',2000)">
+        ...
+        </body>
     <div class="container">
         <div class="mt-5 row justify-content-center align-content-center">
             <div class="col-12 col-md-4 col-lg-6">

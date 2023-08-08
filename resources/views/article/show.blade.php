@@ -11,7 +11,7 @@
     </div>
 
 
-    <div class="container p-0 mt-5">
+    <div class="container p-0 mt-5 mb-5">
         <div class="row justify-content-center ">
             <div class="col-12 col-md-4">
                 <img src="{{Storage::url($article->img)}}" alt="" class="img-fluid">  

@@ -35,7 +35,7 @@
 
     @if (session('message'))
     <div class="container spazio-container" id="scompari">
-        <body onload="setTimeout('document.getElementById('scompari').style.display='none'',2500);setTimeout('document.getElementById('compari').style.display='block'',2500);">
+        <body onload="setTimeout('document.getElementById(\'scompari\').style.display=\'none\'',2000)">
             ...
             </body>
         <div class="mt-5 row justify-content-center align-content-center">

@@ -127,7 +127,7 @@
                     </ul>
                 </div>
                 @endif
-                <form class="p-5 border border-3 rounded" action="{{route('careers.submit')}}" method="POST">
+                <form class="p-5 border border-3 rounded mb-5" action="{{route('careers.submit')}}" method="POST">
                     @csrf
                     <div class="mb-3">
                         <label for="role" class="form-label">Per quale ruolo ti stai candidando?</label>
